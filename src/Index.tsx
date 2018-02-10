@@ -1,11 +1,11 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { App } from 'src/components/App';
-import { TaskStore } from 'src/store';
+import { Store } from 'src/store';
 
 const rootElement = document.getElementById('root');
 
-const store = new TaskStore();
+const store = new Store();
 
 const createUi = (AppComponent: typeof App) => {
     if (__DEV__) {

@@ -1,13 +1,13 @@
 import { action, computed, observable } from 'mobx';
 import { IStepStore } from 'src/store';
-import { WelcomeStore, SurveyStore } from 'src/components/componentStores';
+import { WelcomeStore, SurveyStore, TaskStore } from 'src/components/componentStores';
 import { DataId } from 'src/store/config';
 
 export interface IStoreProps {
-    store: TaskStore;
+    store: Store;
 }
 
-export class TaskStore {
+export class Store {
     public readonly conversationId: string;
     public readonly steps: IStepStore[] = [];
     public readonly accepted: boolean = false;
@@ -38,6 +38,7 @@ export class TaskStore {
         this.accepted = true;
 
         this.steps.push(new WelcomeStore());
+        this.steps.push(new TaskStore());
         this.steps.push(new SurveyStore());
     }
 

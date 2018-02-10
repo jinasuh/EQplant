@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { observer } from 'mobx-react';
 import { IStepStore } from 'src/store/stepStore';
-import { TaskStore, DataId } from 'src/store';
+import { Store, DataId } from 'src/store';
 
 const style = {
     container: {
@@ -15,8 +15,21 @@ export interface IStepProps {
     addData: (key: DataId, data: string) => void;
 }
 
+export interface IStepConfig {
+    isDone: boolean;
+    duration: number;
+    stepView: any;
+    title: string;
+    isComplete: boolean;
+    isVisible: boolean;
+    canProceed: boolean;
+    completeText: string;
+    start(): void;
+    end(): void;
+}
+
 @observer
-export class Step extends React.Component<IStepProps & { store: TaskStore }, void> {
+export class Step extends React.Component<IStepProps & { store: Store }, void> {
     public render() {
         const { store, stepStore, index } = this.props;
         const { completeStep, accepted, addData } = store;

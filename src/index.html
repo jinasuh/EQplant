@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" data-build-hash="${webpack.hash}">
+
+<head>
+	<meta charset="utf-8" />
+	<title>EQ Assistant</title>
+</head>
+
+<body>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<style>
+		pre {
+			padding: 25px;
+		}
+	</style>
+	<div id="root"></div>
+	<p style="height:0;margin:0">
+		<input id="responseInput" name="response" type="text" style="visibility:collapse">
+	</p>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mobx/3.1.0/mobx.umd.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mobx-react/4.1.0/index.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#submitButton")
+				.prop("disabled", true)
+				.attr(
+				"value",
+				"Please complete all steps above before submitting this task"
+				);
+		});
+
+		// INSERT CONFIG CODE HERE
+	</script>
+</body>
+
+</html>

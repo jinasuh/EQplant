@@ -5,5 +5,11 @@
 5. Look for `// INSERT CONFIG CODE HERE` in the content, and replace it with the following
 
 ```
- // TBD
+    window.tastType = ${TaskType};
+    window.data = {};
+    window.data.senderName = ${SenderName};
+    window.data.responderName = "${ResponderName}$";
+    window.data.conversationId = ${ConversationId};
+    window.data.treatmentType = ${TreatmentType};
+    window.data.response = "${Response}";
 ```

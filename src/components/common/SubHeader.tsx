@@ -1,8 +1,9 @@
 import * as React from 'react';
+import { styles } from 'src/styles';
 
 const headerStyle = {
     fontWeight: 400,
-    color: 'rgba(0,0,0,0.71)',
+    color: styles.colors.text,
     marginTop: '30px'
 };
 

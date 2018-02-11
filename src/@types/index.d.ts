@@ -18,5 +18,6 @@ interface JQuery<TElement extends Node = HTMLElement> {
 }
 
 interface Window {
+    taskType: number;
     data: any;
 }

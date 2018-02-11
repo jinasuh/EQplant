@@ -1,12 +1,13 @@
 import * as React from 'react';
+import { styles } from 'src/styles';
 
 const promptStyle = {
-    color: 'rgba(0, 0, 0, 0.71)',
+    color: styles.colors.text,
     fontWeight: 400
 };
 
 const requiredStyle = {
-    color: '#ee6e73',
+    color: styles.colors.highlight,
     fontWeight: 500
 };
 

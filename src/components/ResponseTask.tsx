@@ -1,29 +1,35 @@
 import * as React from 'react';
 import { observer } from 'mobx-react';
-import { DataId, studySetting, demographicQuestions, StudyInputId, TreatmentType } from 'src/store';
-import { MultipleChoiceQuestion, Header, Paragraph, SubHeader, Prompt } from 'src/components/common';
-
-export const phoneShellUrl = require('src/assets/iPhone_shell_1.svg') as string;
+import { DataId, studySetting, demographicQuestions, StudyInputId, TreatmentType, getConversation } from 'src/store';
+import { MultipleChoiceQuestion, Header, Paragraph, SubHeader, Prompt, NotAccepted } from 'src/components/common';
+import { Messenger } from 'src/components/dialog/Messenger';
 
 export interface IResponseTaskProps {
     addData: (key: DataId, data: string) => void;
     getStudyInput: (key: StudyInputId) => string;
     canSubmit: boolean;
+    accepted: boolean;
 }
 
 @observer
 export class ResponseTask extends React.Component<IResponseTaskProps, void> {
     public render() {
-        const { canSubmit } = this.props;
+        const { canSubmit, accepted } = this.props;
         return (
             <div className="container">
                 <form>
                     <div className="row">{this._renderIntroduction()}</div>
-                    <div className="row">{this._renderTask()}</div>
-                    <div className="row">{this._renderSurvey()}</div>
-                    <a className="waves-effect waves-light btn" disabled={!canSubmit}>
-                        Submit
-                    </a>
+                    {accepted ? (
+                        <div>
+                            <div className="row">{this._renderTask()}</div>
+                            <div className="row">{this._renderSurvey()}</div>
+                            <a className="waves-effect waves-light btn" disabled={!canSubmit}>
+                                Submit
+                            </a>
+                        </div>
+                    ) : (
+                        <NotAccepted />
+                    )}
                 </form>
             </div>
         );
@@ -59,7 +65,10 @@ export class ResponseTask extends React.Component<IResponseTaskProps, void> {
     private _renderTask() {
         const { getStudyInput } = this.props;
         const sender = getStudyInput('senderName');
-        const treatment = Number(getStudyInput('treatmentType')) !== TreatmentType.None;
+        const treatmentType = Number(getStudyInput('treatmentType'));
+        const treatment = treatmentType !== TreatmentType.None;
+        const conversationId = getStudyInput('conversationId');
+        const conversation = getConversation(conversationId);
 
         const getHeader = () => {
             if (treatment) {
@@ -86,10 +95,9 @@ export class ResponseTask extends React.Component<IResponseTaskProps, void> {
             <div>
                 {getHeader()}
                 <Paragraph>Imagine you are casually chatting with {sender}. </Paragraph>
-                <div
-                    className="col s4"
-                    style={{ background: `url(${phoneShellUrl}) no-repeat center`, height: '500px' }}
-                />
+                <div className="col s4">
+                    <Messenger conversation={conversation} treatmentType={treatmentType} />
+                </div>
                 <div className="col s8">
                     <Paragraph>Please read the conversation on the left.</Paragraph>
                     <Prompt>Write a realistic and appropriate response given the conversation thread:</Prompt>

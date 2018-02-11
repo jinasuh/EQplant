@@ -1,8 +1,9 @@
 import * as React from 'react';
+import { styles } from 'src/styles';
 
 const headerStyle = {
     fontWeight: 300,
-    color: '#ee6e73'
+    color: styles.colors.highlight
 };
 
 export class Header extends React.Component<{}, void> {

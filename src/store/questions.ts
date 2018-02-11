@@ -9,6 +9,18 @@ export interface IQuestion {
     name: string;
 }
 
+export const empathyQuestion: IQuestion = {
+    question: 'Given the conversation, please rate the level of empathy of the response.',
+    name: 'empathy',
+    options: [
+        { id: 'none', text: 'Not empathetic at all' },
+        { id: 'slightly', text: 'Slightly empathetic' },
+        { id: 'moderate', text: 'Moderately empathetic' },
+        { id: 'very', text: 'Very empathetic' },
+        { id: 'absolutely', text: 'Extremely empathetic' }
+    ]
+};
+
 export const demographicQuestions: IQuestion[] = [
     {
         question: 'What is your gender?',

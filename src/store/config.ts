@@ -12,16 +12,6 @@ export enum TreatmentType {
 
 export type DataId = 'response' | 'empathy' | 'gender' | 'age' | 'literacy' | 'comment';
 
-export interface IMessage {
-    from: string;
-    content: string;
-}
-
-export interface IConversation {
-    id: string;
-    messages: IMessage[];
-}
-
 export interface IStudyInput {
     assignmentId?: string;
     hitId?: string;
@@ -30,22 +20,15 @@ export interface IStudyInput {
     data?: StudyInputData;
 }
 
-export interface ResponseInputData {
-    senderName?: string;
-    conversation?: IConversation;
-    treatmentType?: string;
-}
-
-export interface JudgeInputData {
+export type StudyInputData = {
     senderName?: string;
     responderName?: string;
-    conversation?: IConversation;
+    conversationId?: string;
+    treatmentType?: string;
     response?: string;
-}
+};
 
-export type StudyInputData = ResponseInputData | JudgeInputData;
-
-export type StudyInputId = keyof ResponseInputData | keyof JudgeInputData;
+export type StudyInputId = keyof StudyInputData;
 
 export const studySetting = {
     compensation: '$0.05',
@@ -55,14 +38,16 @@ export const studySetting = {
 export const getDefaultStudyInputData = (taskType: TaskType) => {
     switch (taskType) {
         case TaskType.Response:
-            return <ResponseInputData>{
+            return <StudyInputData>{
                 senderName: 'Unknown Sender',
-                treatmentType: '1'
+                treatmentType: '1',
+                conversationId: 'default'
             };
         case TaskType.Judge:
-            return <JudgeInputData>{
+            return <StudyInputData>{
                 senderName: 'Unknown Sender',
                 responderName: 'Unknown Responder',
+                conversationId: 'default',
                 response:
                     'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...'
             };

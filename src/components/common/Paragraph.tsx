@@ -1,8 +1,9 @@
 import * as React from 'react';
+import { styles } from 'src/styles';
 
 const paragraphStyle = {
     fontWeight: 300,
-    color: 'rgba(0,0,0,0.71)'
+    color: styles.colors.text
 };
 
 export class Paragraph extends React.Component<{}, void> {

@@ -16,6 +16,7 @@ export class App extends React.Component<IStoreProps, void> {
             getStudyInput,
             canSubmitResponseTask,
             canSubmitJudgeTask,
+            accepted,
             studyInput: { taskType }
         } = this.props.store;
 
@@ -27,10 +28,18 @@ export class App extends React.Component<IStoreProps, void> {
                             addData={addData}
                             getStudyInput={getStudyInput}
                             canSubmit={canSubmitResponseTask}
+                            accepted={accepted}
                         />
                     );
                 case TaskType.Judge:
-                    return <JudgeTask addData={addData} getStudyInput={getStudyInput} canSubmit={canSubmitJudgeTask} />;
+                    return (
+                        <JudgeTask
+                            addData={addData}
+                            getStudyInput={getStudyInput}
+                            canSubmit={canSubmitJudgeTask}
+                            accepted={accepted}
+                        />
+                    );
             }
         };
         return <div>{getTask()}</div>;

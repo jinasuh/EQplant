@@ -1,12 +1,15 @@
 import * as React from 'react';
 import { observer } from 'mobx-react';
-import { targetedLabel } from 'src/components/common';
+import { action } from 'mobx';
+import { Option, Prompt } from 'src/components/common';
 
 const style = {
     container: {
         marginBottom: '10px'
     },
-    option: {}
+    question: {
+        color: 'rgba(0, 0, 0, 0.71)'
+    }
 };
 
 export interface IOption {
@@ -25,27 +28,22 @@ export interface IQuestionProps {
 @observer
 export class MultipleChoiceQuestion extends React.Component<IQuestionProps, void> {
     public render() {
-        const TargetedLabel = targetedLabel();
         const { question, options, name } = this.props;
         const optionComponents = options.map(option => {
             const id = `${name}-${option.id}`;
-            return (
-                <div key={option.id}>
-                    <input name={name} type="radio" id={id} onClick={this._onClick.bind(this)} value={option.id} />
-                    <TargetedLabel target={id}>{option.text}</TargetedLabel>
-                </div>
-            );
+            return <Option key={option.id} id={id} text={option.text} onClick={this._onClick} name={name} />;
         });
         return (
             <div style={style.container}>
-                <div>{question}</div>
+                <Prompt>{question}</Prompt>
                 {optionComponents}
             </div>
         );
     }
 
-    private _onClick(e: React.MouseEvent<HTMLInputElement>) {
+    @action.bound
+    private _onClick(value: string) {
         const { onSelect, name } = this.props;
-        onSelect(name, e.currentTarget.value);
+        onSelect(name, value);
     }
 }

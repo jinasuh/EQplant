@@ -1,62 +1,16 @@
-export type DataId = 'response' | 'rating' | 'gender' | 'age' | 'literacy' | 'comment';
-
-export interface IStudyInput {
-    conversationId: string;
-    conditionId: string;
+export enum TaskType {
+    Response = 0,
+    Judge = 1
 }
 
-export interface IOption {
-    id: string;
-    text: string;
+export enum TreatmentType {
+    None = 0,
+    Default = 1,
+    HighConfidence = 2,
+    LowConfidence = 3
 }
 
-export interface IQuestion {
-    question: string;
-    options: IOption[];
-    name: DataId;
-}
-
-export const studySetting = {
-    compensation: '$.05',
-    duration: 'about 1 minute'
-};
-
-export const demographicQuestions: IQuestion[] = [
-    {
-        question: 'What is your gender?',
-        options: [
-            { id: 'male', text: 'Male' },
-            { id: 'female', text: 'Female' },
-            { id: 'other', text: 'Other' },
-            { id: 'gender-na', text: 'Prefer not to specify' }
-        ],
-        name: 'gender'
-    },
-    {
-        question: 'What is your age?',
-        options: [
-            { id: '18-25', text: '18-25' },
-            { id: '26-35', text: '26-35' },
-            { id: '36-45', text: '36-45' },
-            { id: '46-55', text: '46-55' },
-            { id: '56-65', text: '56-65' },
-            { id: '66-75', text: '66-75' },
-            { id: 'age-na', text: 'Prefer not to specify' }
-        ],
-        name: 'age'
-    },
-    {
-        question: 'What is your level of English proficiency?',
-        options: [
-            { id: 'none', text: 'No proficiency' },
-            { id: 'elementary', text: 'Elementary proficiency' },
-            { id: 'limited', text: 'Limited working proficiency' },
-            { id: 'profession', text: 'Professional working proficiency' },
-            { id: 'native', text: 'Native or bilingual proficiency' }
-        ],
-        name: 'literacy'
-    }
-];
+export type DataId = 'response' | 'empathy' | 'gender' | 'age' | 'literacy' | 'comment';
 
 export interface IMessage {
     from: string;
@@ -68,11 +22,49 @@ export interface IConversation {
     messages: IMessage[];
 }
 
-// const conversations = {};
+export interface IStudyInput {
+    assignmentId?: string;
+    hitId?: string;
+    workerId?: string;
+    taskType?: TaskType;
+    data?: StudyInputData;
+}
 
-// const decorations = {};
+export interface ResponseInputData {
+    senderName?: string;
+    conversation?: IConversation;
+    treatmentType?: string;
+}
 
-export const getConversation = (id: string) => {
-    id;
-    return <IConversation>{};
+export interface JudgeInputData {
+    senderName?: string;
+    responderName?: string;
+    conversation?: IConversation;
+    response?: string;
+}
+
+export type StudyInputData = ResponseInputData | JudgeInputData;
+
+export type StudyInputId = keyof ResponseInputData | keyof JudgeInputData;
+
+export const studySetting = {
+    compensation: '$0.05',
+    duration: 'about 1 minute'
+};
+
+export const getDefaultStudyInputData = (taskType: TaskType) => {
+    switch (taskType) {
+        case TaskType.Response:
+            return <ResponseInputData>{
+                senderName: 'Unknown Sender',
+                treatmentType: '1'
+            };
+        case TaskType.Judge:
+            return <JudgeInputData>{
+                senderName: 'Unknown Sender',
+                responderName: 'Unknown Responder',
+                response:
+                    'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...'
+            };
+    }
 };

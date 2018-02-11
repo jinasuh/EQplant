@@ -18,10 +18,5 @@ interface JQuery<TElement extends Node = HTMLElement> {
 }
 
 interface Window {
-    itemData: {
-        itemText: string;
-        itemId: number;
-        itemLabel: number;
-        prediction: number;
-    };
+    data: any;
 }

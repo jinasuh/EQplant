@@ -1,19 +1,19 @@
-import { action, computed, observable } from 'mobx';
-import { IStepStore } from 'src/store';
-import { WelcomeStore, SurveyStore, TaskStore } from 'src/components/componentStores';
-import { DataId } from 'src/store/config';
+import { action, computed, observable, reaction } from 'mobx';
+import { IStepStore, IStudyInput, TaskType } from 'src/store';
+import { DataId, getDefaultStudyInputData } from 'src/store/config';
 
 export interface IStoreProps {
     store: Store;
 }
 
 export class Store {
-    public readonly conversationId: string;
     public readonly steps: IStepStore[] = [];
     public readonly accepted: boolean = false;
 
+    public readonly studyInput: IStudyInput;
+
     @observable public response: string;
-    @observable public rating: string;
+    @observable public empathy: string;
     @observable public gender: string;
     @observable public age: string;
     @observable public literacy: string;
@@ -37,59 +37,77 @@ export class Store {
         // TODO (remove before deploying)
         this.accepted = true;
 
-        this.steps.push(new WelcomeStore());
-        this.steps.push(new TaskStore());
-        this.steps.push(new SurveyStore());
-    }
+        const taskType = queryParams['taskType'] || TaskType.Judge;
 
-    @computed
-    public get allAnswered() {
-        return true;
-    }
+        this.studyInput = {
+            assignmentId,
+            hitId: queryParams['hitId'],
+            workerId: queryParams['workerId'],
+            taskType: taskType,
+            data: window.data || getDefaultStudyInputData(taskType)
+        };
 
-    @computed
-    public get currentStep() {
-        return this.steps[this.currentStepId];
-    }
-
-    @action.bound
-    public setStep(index: number) {
-        if (this.currentStepId != index) {
-            this.currentStepId = index;
-            window.scrollTo(0, 0);
+        switch (this.studyInput.taskType) {
+            case TaskType.Response:
+                reaction(
+                    () => this.canSubmitResponseTask,
+                    canSubmit => {
+                        $('#submitButton')
+                            .prop('disabled', !canSubmit)
+                            .attr('value', 'Submit Task');
+                    }
+                );
+                break;
+            case TaskType.Judge:
+                reaction(
+                    () => this.canSubmitJudgeTask,
+                    canSubmit => {
+                        $('#submitButton')
+                            .prop('disabled', !canSubmit)
+                            .attr('value', 'Submit Task');
+                    }
+                );
+                break;
         }
     }
 
-    @action.bound
-    public completeStep(index: number) {
-        this.steps[index].isComplete = true;
-        this.steps[index].isVisible = false;
-        this.steps[index].end();
+    @computed
+    public get canSubmitResponseTask() {
+        return (
+            this._isValid(this.response) &&
+            this._isValid(this.gender) &&
+            this._isValid(this.age) &&
+            this._isValid(this.literacy)
+        );
+    }
 
-        const next = this.steps[index + 1];
-        if (next) {
-            if (index + 1 == this.steps.length - 1) {
-                $('#submitButton')
-                    .prop('disabled', false)
-                    .attr('value', 'Submit Task');
-
-                // console.log(this.taskData);
-                next.isComplete = true;
-            }
-
-            next.isVisible = true;
-            this.setStep(index + 1);
-            setTimeout(() => {
-                $('ul.tabs').tabs('select_tab', `step${index + 1}`);
-                if (next) {
-                    next.start();
-                }
-            }, 200);
-        }
+    @computed
+    public get canSubmitJudgeTask() {
+        return (
+            this._isValid(this.empathy) &&
+            this._isValid(this.gender) &&
+            this._isValid(this.age) &&
+            this._isValid(this.literacy)
+        );
     }
 
     @action.bound
     public addData(key: DataId, data: string) {
         this[key] = data;
+    }
+
+    @action.bound
+    public getStudyInput(key: string) {
+        const input = (<any>this.studyInput.data)[key];
+
+        if (!input || input.length == 0) {
+            return 'TODOSTRING';
+        }
+
+        return input;
+    }
+
+    private _isValid(value: string) {
+        return value && value.length > 0;
     }
 }

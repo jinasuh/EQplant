@@ -10,4 +10,9 @@ export function targetedLabel() {
 }
 
 export * from 'src/components/common/MultipleChoiceQuestion';
-export * from 'src/components/common/Step';
+export * from 'src/components/common/Header';
+export * from 'src/components/common/SubHeader';
+export * from 'src/components/common/Paragraph';
+export * from 'src/components/common/Option';
+export * from 'src/components/common/Prompt';
+export * from 'src/components/common/Card';

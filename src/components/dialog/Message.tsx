@@ -6,15 +6,15 @@ const getContainerStyle = (received = true) => {
     return {
         display: 'flex',
         flexDirection: received ? 'row' : 'row-reverse',
-        alignItems: 'flex-start'
+        alignItems: received ? 'flex-start' : 'flex-end',
+        marginBottom: '10px'
     };
 };
 
 const getMessageContainerStyle = (received = true) => {
     return {
         flex: '0 1 auto',
-        maxWidth: received ? '200px' : '230px',
-        marginBottom: '10px'
+        maxWidth: received ? '200px' : '230px'
     };
 };
 
@@ -56,6 +56,13 @@ const getIconStyle = (received = true) => {
             margin: '0 0 0 2px',
             fontSize: '10px'
         };
+};
+
+const sentIconStyle = {
+    display: 'flex',
+    'justify-content': 'stretch',
+    alignItems: 'stretch',
+    height: '100%'
 };
 
 const treatmentIconStyle = {
@@ -104,7 +111,7 @@ export class Message extends React.Component<IMessageProps, void> {
             );
         } else {
             return (
-                <div>
+                <div style={sentIconStyle}>
                     <i style={iconStyle} className="material-icons circle tiny">
                         check_circle
                     </i>

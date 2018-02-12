@@ -5,11 +5,12 @@ import { styles } from 'src/styles';
 
 const containerStyle = {
     width: '300px',
+    minWidth: '300px',
     height: '500px',
     border: '1px solid #eee',
     display: 'flex',
     flexDirection: 'column',
-    marginRight: '30px'
+    margin: '25px 30px 25px 0'
 };
 
 const messengerStyle = {

@@ -4,13 +4,14 @@ import {
     DataId,
     studySetting,
     demographicQuestions,
-    empathyQuestion,
+    getEmpathyQuestion,
     StudyInputId,
     TreatmentType,
     getConversation
 } from 'src/store';
-import { MultipleChoiceQuestion, Header, Paragraph, SubHeader, Prompt, Card, NotAccepted } from 'src/components/common';
+import { MultipleChoiceQuestion, Header, Paragraph, SubHeader, Prompt, NotAccepted } from 'src/components/common';
 import { Messenger } from 'src/components/dialog/Messenger';
+import { Message } from 'src/components/dialog/Message';
 import { leftTopBox } from 'src/styles';
 
 export const phoneShellUrl = require('src/assets/iPhone_shell_1.svg') as string;
@@ -29,11 +30,13 @@ export class JudgeTask extends React.Component<IJudgeTaskProps, void> {
         return (
             <div className="container">
                 <form>
-                    <div className="row">{this._renderIntroduction()}</div>
+                    <div className="section">{this._renderIntroduction()}</div>
+                    <div className="divider" />
                     {accepted ? (
                         <div>
-                            <div className="row">{this._renderTask()}</div>
-                            <div className="row">{this._renderSurvey()}</div>
+                            <div className="section">{this._renderTask()}</div>
+                            <div className="divider" />
+                            <div className="section">{this._renderSurvey()}</div>
                             <a className="waves-effect waves-light btn" disabled={!canSubmit}>
                                 Submit
                             </a>
@@ -52,9 +55,10 @@ export class JudgeTask extends React.Component<IJudgeTaskProps, void> {
             <div>
                 <Header>Introduction</Header>
                 <Paragraph>
-                    Your task is to judge whether or not the provided response is <i>empathetic</i> given a conversation
-                    thread from text messaging communications between two people. Your task should take {duration} to
-                    complete. You will be compensated {compensation}.
+                    Your task is to determine whether a response in a conversation is appropriate. You will be presented
+                    with different scenarios of conversations conducted through text messages between two people. You
+                    will be asked to determine whether the latest message in the conversation is appropriate given the
+                    context. Your task should take {duration} to complete. You will be compensated {compensation}.
                 </Paragraph>
 
                 <SubHeader>Eligibility</SubHeader>
@@ -78,20 +82,28 @@ export class JudgeTask extends React.Component<IJudgeTaskProps, void> {
         const conversationId = getStudyInput('conversationId');
         const conversation = getConversation(conversationId);
         const { from, to } = conversation;
+        const empathyQuestion = getEmpathyQuestion(from, to);
 
         return (
             <div>
-                <Header>Task</Header>
-                <Paragraph>
-                    Please read the conversation between {from} and {to} on the left.{' '}
-                </Paragraph>
                 <div style={leftTopBox}>
                     <Messenger conversation={conversation} treatmentType={TreatmentType.None} />
                     <div>
+                        <Header>Task</Header>
                         <Paragraph>
-                            To the last message that {from} sent, {to} has responded with the message below.
+                            Please read the conversation on the left between {from} and {to}.
                         </Paragraph>
-                        <Card>"{response}"</Card>
+                        <Paragraph>
+                            This was {to}'s' most recent response to {from}:
+                        </Paragraph>
+                        <div style={{ maxWidth: '300px', margin: '30px 0' }}>
+                            <Message
+                                from={conversation.from}
+                                message={response}
+                                received={false}
+                                treatmentType={TreatmentType.None}
+                            />
+                        </div>
                         <MultipleChoiceQuestion {...empathyQuestion} onSelect={addData} />
                     </div>
                 </div>

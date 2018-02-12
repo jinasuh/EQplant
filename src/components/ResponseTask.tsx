@@ -19,11 +19,13 @@ export class ResponseTask extends React.Component<IResponseTaskProps, void> {
         return (
             <div className="container">
                 <form>
-                    <div className="row">{this._renderIntroduction()}</div>
+                    <div className="section">{this._renderIntroduction()}</div>
+                    <div className="divider" />
                     {accepted ? (
                         <div>
-                            <div className="row">{this._renderTask()}</div>
-                            <div className="row">{this._renderSurvey()}</div>
+                            <div className="section">{this._renderTask()}</div>
+                            <div className="divider" />
+                            <div className="section">{this._renderSurvey()}</div>
                             <a className="waves-effect waves-light btn" disabled={!canSubmit}>
                                 Submit
                             </a>
@@ -42,10 +44,10 @@ export class ResponseTask extends React.Component<IResponseTaskProps, void> {
             <div>
                 <Header>Introduction</Header>
                 <Paragraph>
-                    Your task is to provide a <i>realistic</i> response to a conversation thread from text messaging
-                    communications between two people. Other workers will judge whether your response is appropriate for
-                    the conversation. Your task should take {duration} to complete. You will be compensated{' '}
-                    {compensation}.
+                    Your task is to provide a <i>realistic</i> response to a conversation thread between two people. You
+                    will be presented with different scenarios of conversations conducted through text messages, and you
+                    will be asked to respond to the last message. Your task should take {duration} to complete. You will
+                    be compensated {compensation}.
                 </Paragraph>
 
                 <SubHeader>Eligibility</SubHeader>
@@ -69,19 +71,17 @@ export class ResponseTask extends React.Component<IResponseTaskProps, void> {
         const treatment = treatmentType !== TreatmentType.None;
         const conversationId = getStudyInput('conversationId');
         const conversation = getConversation(conversationId);
-        const { from } = conversation;
+        const { from, to } = conversation;
 
         const getHeader = () => {
             if (treatment) {
                 return (
                     <div>
-                        {' '}
-                        <Header>Chat Assistance</Header>
+                        <Header>Task</Header>
                         <Paragraph>
                             You are using a new chat app to communicate with someone. As you use the app, the chat
                             assistant will help you understand more about your contacts as you chat with them.
                         </Paragraph>
-                        <SubHeader>Task</SubHeader>
                     </div>
                 );
             } else {
@@ -95,13 +95,17 @@ export class ResponseTask extends React.Component<IResponseTaskProps, void> {
 
         return (
             <div>
-                {getHeader()}
-                <Paragraph>Imagine you are casually chatting with {from}. </Paragraph>
                 <div style={leftTopBox}>
                     <Messenger conversation={conversation} treatmentType={treatmentType} />
                     <div>
-                        <Paragraph>Please read the conversation on the left.</Paragraph>
-                        <Prompt>Write a realistic and appropriate response given the conversation thread:</Prompt>
+                        {getHeader()}
+                        <Paragraph>
+                            You are {to}. You are chatting with {from} through text messages.
+                        </Paragraph>
+                        <Prompt>
+                            Please read the conversation to the left. Consider the context of the messages and write a
+                            realistic and appropriate response to the latest message from {from}.
+                        </Prompt>
                         <textarea
                             placeholder="Your response goes here..."
                             id="response"

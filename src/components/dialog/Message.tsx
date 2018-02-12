@@ -10,85 +10,121 @@ const getContainerStyle = (received = true) => {
     };
 };
 
-const getIconStyle = (received = true) => {
-    if (received) {
-        return {
-            flex: '0 0 30px'
-        };
-    } else
-        return {
-            flex: '0 0 10px'
-        };
-};
-
 const getMessageContainerStyle = (received = true) => {
     return {
         flex: '0 1 auto',
         maxWidth: received ? '200px' : '230px',
-        backgroundColor: received ? styles.colors.receivedBackground : styles.colors.sentBackground,
-        borderRadius: '10px',
-        margin: '5px',
-        textAlign: received ? 'start' : 'end'
+        marginBottom: '10px'
     };
 };
 
-const nameStyle = {
-    'font-size': '6px',
-    color: '#777',
-    display: 'none'
-};
-
-const getMessageStyle = (received = true) => {
+const getMessageStyle = (received = true, treatment = false) => {
     return {
-        'font-size': '10px',
-        color: received ? 'white' : styles.colors.text,
+        backgroundColor: received ? styles.colors.receivedBackground : styles.colors.sentBackground,
+        borderRadius: treatment ? '10px 10px 0 0 ' : '10px',
+        textAlign: received ? 'start' : 'end',
+        fontSize: '12px',
+        color: received ? styles.colors.receivedText : styles.colors.sentText,
         padding: '8px'
     };
 };
 
+const nameStyle = {
+    fontSize: '8px',
+    color: '#777',
+    marginLeft: '40px'
+};
+
 const defaultTreatmentStyle = {
-    'font-size': '6px',
+    fontSize: '10px',
     color: styles.colors.highlight,
-    padding: '8px',
     backgroundColor: 'white',
     border: '1px solid ' + styles.colors.receivedBackground,
-    borderRadius: '0 0 10px 10px'
+    borderRadius: '0 0 10px 10px',
+    padding: '8px'
+};
+
+const getIconStyle = (received = true) => {
+    if (received) {
+        return {
+            fontSize: '30px',
+            margin: '0 2px 0 0'
+        };
+    } else
+        return {
+            color: styles.colors.sentBackground,
+            margin: '0 0 0 2px',
+            fontSize: '10px'
+        };
+};
+
+const treatmentIconStyle = {
+    fontSize: '10px',
+    paddingRight: '4px'
 };
 
 export interface IMessageProps {
     received?: boolean;
-    icon?: string;
-    name: string;
+    from: string;
     message: string;
     treatmentType: TreatmentType;
 }
 
 export class Message extends React.Component<IMessageProps, void> {
     public render() {
-        const { received = true, icon = 'account_circle', name, message, treatmentType } = this.props;
+        const { received = true, from, message, treatmentType } = this.props;
         const containerStyle = getContainerStyle(received);
-        const iconStyle = getIconStyle(received);
         const messageContainerStyle = getMessageContainerStyle(received);
-        const messageStyle = getMessageStyle(received);
+        const treatment = treatmentType !== TreatmentType.None;
+        const messageStyle = getMessageStyle(received, treatment);
 
         return (
-            <div style={containerStyle}>
-                <div style={iconStyle}>
-                    <i className="material-icons circle">{icon}</i>
-                </div>
-                <div style={messageContainerStyle}>
-                    <div style={nameStyle}>{name}</div>
-                    <div style={messageStyle}>{message}</div>
-                    {this._getTreatment(name, treatmentType)}
+            <div>
+                {received ? <div style={nameStyle}>{from}</div> : null}
+                <div style={containerStyle}>
+                    {this._getIcon(received)}
+                    <div style={messageContainerStyle}>
+                        <div style={messageStyle}>{message}</div>
+                        {this._getTreatment(from, treatmentType)}
+                    </div>
                 </div>
             </div>
         );
     }
 
+    private _getIcon(received: boolean) {
+        const iconStyle = getIconStyle(received);
+        if (received) {
+            return (
+                <div>
+                    <i style={iconStyle} className="material-icons circle small">
+                        account_circle
+                    </i>
+                </div>
+            );
+        } else {
+            return (
+                <div>
+                    <i style={iconStyle} className="material-icons circle tiny">
+                        check_circle
+                    </i>
+                </div>
+            );
+        }
+    }
+
     private _getTreatment(name: string, treatmentType: TreatmentType) {
         switch (treatmentType) {
             case TreatmentType.Default:
-                return <div style={defaultTreatmentStyle}>{name} seems to be angry</div>;
+                return (
+                    <div style={defaultTreatmentStyle}>
+                        <i className="material-icons" style={treatmentIconStyle}>
+                            lightbulb_outline
+                        </i>
+                        {name} seems angry
+                    </div>
+                );
+
             case TreatmentType.None:
             default:
                 return null;

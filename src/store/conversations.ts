@@ -1,11 +1,12 @@
 export interface IMessage {
-    from: string;
+    received: boolean;
     content: string;
 }
 
 export interface IConversation {
     id: string;
     messages: IMessage[];
+    from: string;
 }
 
 export const getConversation = (conversationId: string) => {
@@ -14,70 +15,24 @@ export const getConversation = (conversationId: string) => {
 
 const conversations: IConversation[] = [
     {
-        id: 'default',
+        id: 'anger1',
+        from: 'David',
         messages: [
             {
-                from: 'Unknown',
-                content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+                received: false,
+                content: 'Sorry man, this is taking super long. You can start without me if you want'
             },
             {
-                from: 'me',
-                content: 'Lorem ipsum.'
+                received: true,
+                content: 'What the fuck dude'
             },
             {
-                from: 'Unknown',
-                content:
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut porta tellus. Etiam vel ipsum sodales, suscipit turpis consectetur, fermentum odio. Aenean sit amet eleifend nunc. '
+                received: false,
+                content: 'I said I’m sorry lol you can chill for liek 5 minutes i’ll be there with the chicken nuggets'
             },
             {
-                from: 'me',
-                content: 'Ipsum dolor sit amet.'
-            },
-            {
-                from: 'Unknown',
-                content: 'Lorem??'
-            },
-            {
-                from: 'Unknown',
-                content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-            },
-            {
-                from: 'me',
-                content: 'Lorem ipsum.'
-            },
-            {
-                from: 'Unknown',
-                content:
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut porta tellus. Etiam vel ipsum sodales, suscipit turpis consectetur, fermentum odio. Aenean sit amet eleifend nunc. '
-            },
-            {
-                from: 'me',
-                content: 'Ipsum dolor sit amet.'
-            },
-            {
-                from: 'Unknown',
-                content: 'Lorem??'
-            },
-            {
-                from: 'Unknown',
-                content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-            },
-            {
-                from: 'me',
-                content: 'Lorem ipsum.'
-            },
-            {
-                from: 'Unknown',
-                content:
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut porta tellus. Etiam vel ipsum sodales, suscipit turpis consectetur, fermentum odio. Aenean sit amet eleifend nunc. '
-            },
-            {
-                from: 'me',
-                content: 'Ipsum dolor sit amet.'
-            },
-            {
-                from: 'Unknown',
-                content: 'Lorem??'
+                received: true,
+                content: 'They’d better not get cold 😄'
             }
         ]
     }

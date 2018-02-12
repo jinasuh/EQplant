@@ -41,13 +41,13 @@ export const getDefaultStudyInputData = (taskType: TaskType) => {
             return <StudyInputData>{
                 senderName: 'Unknown Sender',
                 treatmentType: '1',
-                conversationId: 'default'
+                conversationId: 'anger1'
             };
         case TaskType.Judge:
             return <StudyInputData>{
                 senderName: 'Unknown Sender',
                 responderName: 'Unknown Responder',
-                conversationId: 'default',
+                conversationId: 'anger1',
                 response:
                     'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...'
             };

@@ -11,6 +11,7 @@ import {
 } from 'src/store';
 import { MultipleChoiceQuestion, Header, Paragraph, SubHeader, Prompt, Card, NotAccepted } from 'src/components/common';
 import { Messenger } from 'src/components/dialog/Messenger';
+import { leftTopBox } from 'src/styles';
 
 export const phoneShellUrl = require('src/assets/iPhone_shell_1.svg') as string;
 
@@ -73,27 +74,26 @@ export class JudgeTask extends React.Component<IJudgeTaskProps, void> {
 
     private _renderTask() {
         const { getStudyInput, addData } = this.props;
-        const sender = getStudyInput('senderName');
-        const responder = getStudyInput('responderName');
         const response = getStudyInput('response');
         const conversationId = getStudyInput('conversationId');
         const conversation = getConversation(conversationId);
+        const { from, to } = conversation;
 
         return (
             <div>
                 <Header>Task</Header>
                 <Paragraph>
-                    Please read the conversation between {sender} and {responder} on the left.{' '}
+                    Please read the conversation between {from} and {to} on the left.{' '}
                 </Paragraph>
-                <div className="col s4">
+                <div style={leftTopBox}>
                     <Messenger conversation={conversation} treatmentType={TreatmentType.None} />
-                </div>
-                <div className="col s8">
-                    <Paragraph>
-                        To the last message that {sender} sent, {responder} has responded with the message below.
-                    </Paragraph>
-                    <Card>"{response}"</Card>
-                    <MultipleChoiceQuestion {...empathyQuestion} onSelect={addData} />
+                    <div>
+                        <Paragraph>
+                            To the last message that {from} sent, {to} has responded with the message below.
+                        </Paragraph>
+                        <Card>"{response}"</Card>
+                        <MultipleChoiceQuestion {...empathyQuestion} onSelect={addData} />
+                    </div>
                 </div>
             </div>
         );

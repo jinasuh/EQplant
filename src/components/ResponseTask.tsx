@@ -3,6 +3,7 @@ import { observer } from 'mobx-react';
 import { DataId, studySetting, demographicQuestions, StudyInputId, TreatmentType, getConversation } from 'src/store';
 import { MultipleChoiceQuestion, Header, Paragraph, SubHeader, Prompt, NotAccepted } from 'src/components/common';
 import { Messenger } from 'src/components/dialog/Messenger';
+import { leftTopBox } from 'src/styles';
 
 export interface IResponseTaskProps {
     addData: (key: DataId, data: string) => void;
@@ -64,11 +65,11 @@ export class ResponseTask extends React.Component<IResponseTaskProps, void> {
 
     private _renderTask() {
         const { getStudyInput } = this.props;
-        const sender = getStudyInput('senderName');
         const treatmentType = Number(getStudyInput('treatmentType'));
         const treatment = treatmentType !== TreatmentType.None;
         const conversationId = getStudyInput('conversationId');
         const conversation = getConversation(conversationId);
+        const { from } = conversation;
 
         const getHeader = () => {
             if (treatment) {
@@ -91,22 +92,23 @@ export class ResponseTask extends React.Component<IResponseTaskProps, void> {
                 );
             }
         };
+
         return (
             <div>
                 {getHeader()}
-                <Paragraph>Imagine you are casually chatting with {sender}. </Paragraph>
-                <div className="col s4">
+                <Paragraph>Imagine you are casually chatting with {from}. </Paragraph>
+                <div style={leftTopBox}>
                     <Messenger conversation={conversation} treatmentType={treatmentType} />
-                </div>
-                <div className="col s8">
-                    <Paragraph>Please read the conversation on the left.</Paragraph>
-                    <Prompt>Write a realistic and appropriate response given the conversation thread:</Prompt>
-                    <textarea
-                        placeholder="Your response goes here..."
-                        id="response"
-                        className="materialize-textarea"
-                        onChange={this._onChange.bind(this)}
-                    />
+                    <div>
+                        <Paragraph>Please read the conversation on the left.</Paragraph>
+                        <Prompt>Write a realistic and appropriate response given the conversation thread:</Prompt>
+                        <textarea
+                            placeholder="Your response goes here..."
+                            id="response"
+                            className="materialize-textarea"
+                            onChange={this._onChange.bind(this)}
+                        />
+                    </div>
                 </div>
             </div>
         );

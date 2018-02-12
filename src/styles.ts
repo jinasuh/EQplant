@@ -9,3 +9,9 @@ export const styles = {
         placeholderText: '#ccc'
     }
 };
+
+export const leftTopBox = {
+    display: 'flex',
+    'justify-content': 'flex-start',
+    alignItems: 'top'
+};

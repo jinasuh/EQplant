@@ -21,8 +21,6 @@ export interface IStudyInput {
 }
 
 export type StudyInputData = {
-    senderName?: string;
-    responderName?: string;
     conversationId?: string;
     treatmentType?: string;
     response?: string;
@@ -39,15 +37,12 @@ export const getDefaultStudyInputData = (taskType: TaskType) => {
     switch (taskType) {
         case TaskType.Response:
             return <StudyInputData>{
-                senderName: 'Unknown Sender',
                 treatmentType: '1',
-                conversationId: 'anger1'
+                conversationId: '1'
             };
         case TaskType.Judge:
             return <StudyInputData>{
-                senderName: 'Unknown Sender',
-                responderName: 'Unknown Responder',
-                conversationId: 'anger1',
+                conversationId: '2',
                 response:
                     'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...'
             };

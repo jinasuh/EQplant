@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { IConversation, TreatmentType } from 'src/store';
-// import { getAsset } from 'src/assets/assets';
 import { Message } from 'src/components/dialog/Message';
 import { styles } from 'src/styles';
 
@@ -9,7 +8,8 @@ const containerStyle = {
     height: '500px',
     border: '1px solid #eee',
     display: 'flex',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    marginRight: '30px'
 };
 
 const messengerStyle = {
@@ -44,9 +44,6 @@ export interface IMessengerProps {
 export class Messenger extends React.Component<IMessengerProps, void> {
     public render() {
         const { conversation, treatmentType } = this.props;
-        // const assetUrl = getAsset(conversation.id, treatmentType);
-
-        // return <div className="col s4" style={{ background: `url(${assetUrl}) no-repeat center`, height: '500px' }} />;
         return (
             <div style={containerStyle}>
                 <div style={headerStyle}>

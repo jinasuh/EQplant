@@ -1,8 +1,15 @@
 import * as React from 'react';
 import { observer } from 'mobx-react';
 import { DataId, studySetting, demographicQuestions, StudyInputId, TreatmentType, getConversation } from 'src/store';
-import { MultipleChoiceQuestion, Header, Paragraph, SubHeader, Prompt, NotAccepted } from 'src/components/common';
-import { Messenger } from 'src/components/dialog/Messenger';
+import {
+    MultipleChoiceQuestion,
+    Header,
+    Paragraph,
+    SubHeader,
+    Prompt,
+    NotAccepted,
+    Messenger
+} from 'src/components/common';
 import { leftTopBox } from 'src/styles';
 
 export interface IResponseTaskProps {
@@ -102,10 +109,12 @@ export class ResponseTask extends React.Component<IResponseTaskProps, void> {
                         <Paragraph>
                             You are {to}. You are chatting with {from} through text messages.
                         </Paragraph>
-                        <Prompt>
-                            Please read the conversation to the left. Consider the context of the messages and write a
-                            realistic and appropriate response to the latest message from {from}.
-                        </Prompt>
+                        <div style={{ marginTop: '40px' }}>
+                            <Prompt>
+                                Please read the conversation to the left. Consider the context of the messages and write
+                                a realistic and appropriate response to the latest message from {from}.
+                            </Prompt>
+                        </div>
                         <textarea
                             placeholder="Your response goes here..."
                             id="response"

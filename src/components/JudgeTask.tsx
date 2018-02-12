@@ -9,9 +9,16 @@ import {
     TreatmentType,
     getConversation
 } from 'src/store';
-import { MultipleChoiceQuestion, Header, Paragraph, SubHeader, Prompt, NotAccepted } from 'src/components/common';
-import { Messenger } from 'src/components/dialog/Messenger';
-import { Message } from 'src/components/dialog/Message';
+import {
+    MultipleChoiceQuestion,
+    Header,
+    Paragraph,
+    SubHeader,
+    Prompt,
+    NotAccepted,
+    Message,
+    Messenger
+} from 'src/components/common';
 import { leftTopBox } from 'src/styles';
 
 export const phoneShellUrl = require('src/assets/iPhone_shell_1.svg') as string;

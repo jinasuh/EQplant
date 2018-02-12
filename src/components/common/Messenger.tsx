@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { IConversation, TreatmentType } from 'src/store';
-import { Message } from 'src/components/dialog/Message';
+import { Message, Initial } from 'src/components/common';
 import { styles } from 'src/styles';
 
 const containerStyle = {
@@ -45,10 +45,14 @@ export interface IMessengerProps {
 export class Messenger extends React.Component<IMessengerProps, void> {
     public render() {
         const { conversation, treatmentType } = this.props;
+        const { from } = conversation;
+
         return (
             <div style={containerStyle}>
                 <div style={headerStyle}>
-                    <i className="material-icons circle small">account_circle</i>
+                    <div style={{ marginRight: '8px' }}>
+                        <Initial name={from} />
+                    </div>
                     {conversation.from}
                 </div>
                 <div style={messengerStyle}>

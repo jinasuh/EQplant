@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { TreatmentType } from 'src/store';
+import { Initial } from 'src/components/common';
 import { styles } from 'src/styles';
 
 const getContainerStyle = (received = true) => {
@@ -47,8 +48,7 @@ const defaultTreatmentStyle = {
 const getIconStyle = (received = true) => {
     if (received) {
         return {
-            fontSize: '30px',
-            margin: '0 2px 0 0'
+            margin: '0 5px 0 0'
         };
     } else
         return {
@@ -89,7 +89,7 @@ export class Message extends React.Component<IMessageProps, void> {
             <div>
                 {received ? <div style={nameStyle}>{from}</div> : null}
                 <div style={containerStyle}>
-                    {this._getIcon(received)}
+                    {this._getIcon(received, from)}
                     <div style={messageContainerStyle}>
                         <div style={messageStyle}>{message}</div>
                         {this._getTreatment(from, treatmentType)}
@@ -99,14 +99,12 @@ export class Message extends React.Component<IMessageProps, void> {
         );
     }
 
-    private _getIcon(received: boolean) {
+    private _getIcon(received: boolean, from: string) {
         const iconStyle = getIconStyle(received);
         if (received) {
             return (
-                <div>
-                    <i style={iconStyle} className="material-icons circle small">
-                        account_circle
-                    </i>
+                <div style={iconStyle}>
+                    <Initial name={from} />
                 </div>
             );
         } else {

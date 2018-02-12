@@ -6,3 +6,6 @@ export * from 'src/components/common/Option';
 export * from 'src/components/common/Prompt';
 export * from 'src/components/common/Card';
 export * from 'src/components/common/NotAccepted';
+export * from 'src/components/common/Message';
+export * from 'src/components/common/Messenger';
+export * from 'src/components/common/Initial';

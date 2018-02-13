@@ -1,13 +1,13 @@
 import * as React from 'react';
 import { TreatmentType } from 'src/store';
 import { Initial } from 'src/components/common';
-import { styles } from 'src/styles';
+import { styles, lightBulbColored } from 'src/styles';
 
 const getContainerStyle = (received = true) => {
     return {
         display: 'flex',
         flexDirection: received ? 'row' : 'row-reverse',
-        alignItems: received ? 'flex-start' : 'flex-end',
+        alignItems: 'flex-end',
         marginBottom: '10px'
     };
 };
@@ -66,8 +66,9 @@ const sentIconStyle = {
 };
 
 const treatmentIconStyle = {
-    fontSize: '10px',
-    paddingRight: '4px'
+    paddingRight: '4px',
+    width: '18px',
+    marginBottom: '-4px'
 };
 
 export interface IMessageProps {
@@ -121,11 +122,10 @@ export class Message extends React.Component<IMessageProps, void> {
     private _getTreatment(name: string, treatmentType: TreatmentType) {
         switch (treatmentType) {
             case TreatmentType.Default:
+                const iconSource = `data:image/png;base64,${lightBulbColored}`;
                 return (
                     <div style={defaultTreatmentStyle}>
-                        <i className="material-icons" style={treatmentIconStyle}>
-                            lightbulb_outline
-                        </i>
+                        <img src={iconSource} style={treatmentIconStyle} />
                         {name} seems angry
                     </div>
                 );

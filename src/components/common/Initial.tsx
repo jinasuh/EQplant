@@ -9,7 +9,8 @@ const iconStyle = {
     backgroundColor: styles.colors.initialBackground,
     color: styles.colors.initialText,
     lineHeight: '30px',
-    textAlign: 'center'
+    textAlign: 'center',
+    margin: '1px 0'
 };
 
 export interface IInitialProps {

@@ -1,5 +1,5 @@
 import { action, computed, observable, reaction } from 'mobx';
-import { IStepStore, IStudyInput, TaskType } from 'src/store';
+import { IStudyInput, TaskType } from 'src/store';
 import { DataId, getDefaultStudyInputData } from 'src/store/config';
 
 export interface IStoreProps {
@@ -7,7 +7,6 @@ export interface IStoreProps {
 }
 
 export class Store {
-    public readonly steps: IStepStore[] = [];
     public readonly accepted: boolean = false;
 
     public readonly studyInput: IStudyInput;

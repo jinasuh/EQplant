@@ -7,7 +7,7 @@ const style = {
 };
 
 export interface IOptionProps {
-    key: string;
+    value: string;
     id: string;
     name: string;
     onClick: (value: string) => void;
@@ -16,10 +16,10 @@ export interface IOptionProps {
 
 export class Option extends React.Component<IOptionProps, void> {
     public render() {
-        const { key, id, name, text } = this.props;
+        const { value, id, name, text } = this.props;
         return (
-            <div key={key} style={style}>
-                <input name={name} type="radio" id={id} onClick={this._onClick} value={key} />
+            <div key={value} style={style}>
+                <input name={name} type="radio" id={id} onClick={this._onClick} value={value} />
                 <TargetedLabel target={id}>{text}</TargetedLabel>
             </div>
         );

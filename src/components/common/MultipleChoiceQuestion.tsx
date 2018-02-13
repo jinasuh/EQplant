@@ -31,7 +31,7 @@ export class MultipleChoiceQuestion extends React.Component<IQuestionProps, void
         const { question, options, name } = this.props;
         const optionComponents = options.map(option => {
             const id = `${name}-${option.id}`;
-            return <Option key={option.id} id={id} text={option.text} onClick={this._onClick} name={name} />;
+            return <Option value={option.id} id={id} text={option.text} onClick={this._onClick} name={name} />;
         });
         return (
             <div style={style.container}>

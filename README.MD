@@ -4,12 +4,20 @@
 4. Paste the whole content into the source view of the Mturk task designer
 5. Look for `// INSERT CONFIG CODE HERE` in the content, and replace it with the following
 
-```
-    window.tastType = ${TaskType};
-    window.data = {};
-    window.data.senderName = ${SenderName};
-    window.data.responderName = "${ResponderName}$";
-    window.data.conversationId = ${ConversationId};
-    window.data.treatmentType = ${TreatmentType};
-    window.data.response = "${Response}";
-```
+    For Response Tasks
+
+    ```
+        window.tastType = "${TaskType}";
+        window.data = {};
+        window.data.conversationId = "${ConversationId}";
+        window.data.treatmentType = "${TreatmentType}";
+    ```
+
+    For Judge Tasks
+
+    ```
+        window.tastType = "${TaskType}";
+        window.data = {};
+        window.data.conversationId = "${ConversationId}";
+        window.data.response = "${Response}";
+    ```

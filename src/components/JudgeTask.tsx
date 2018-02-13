@@ -21,8 +21,6 @@ import {
 } from 'src/components/common';
 import { leftTopBox } from 'src/styles';
 
-export const phoneShellUrl = require('src/assets/iPhone_shell_1.svg') as string;
-
 export interface IJudgeTaskProps {
     addData: (key: DataId, data: string) => void;
     getStudyInput: (key: StudyInputId) => string;
@@ -33,25 +31,20 @@ export interface IJudgeTaskProps {
 @observer
 export class JudgeTask extends React.Component<IJudgeTaskProps, void> {
     public render() {
-        const { canSubmit, accepted } = this.props;
+        const { accepted } = this.props;
         return (
             <div className="container">
-                <form>
-                    <div className="section">{this._renderIntroduction()}</div>
-                    <div className="divider" />
-                    {accepted ? (
-                        <div>
-                            <div className="section">{this._renderTask()}</div>
-                            <div className="divider" />
-                            <div className="section">{this._renderSurvey()}</div>
-                            <a className="waves-effect waves-light btn" disabled={!canSubmit}>
-                                Submit
-                            </a>
-                        </div>
-                    ) : (
-                        <NotAccepted />
-                    )}
-                </form>
+                <div className="section">{this._renderIntroduction()}</div>
+                <div className="divider" />
+                {accepted ? (
+                    <div>
+                        <div className="section">{this._renderTask()}</div>
+                        <div className="divider" />
+                        <div className="section">{this._renderSurvey()}</div>
+                    </div>
+                ) : (
+                    <NotAccepted />
+                )}
             </div>
         );
     }

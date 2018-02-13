@@ -38,7 +38,7 @@ const conversations: IConversation[] = [
             },
             {
                 received: true,
-                content: 'They’d better not get cold 😄'
+                content: 'They’d better not get cold'
             }
         ]
     },

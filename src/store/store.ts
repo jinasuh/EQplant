@@ -34,7 +34,7 @@ export class Store {
         var assignmentId = queryParams['assignmentId'];
         this.accepted = assignmentId && assignmentId != 'ASSIGNMENT_ID_NOT_AVAILABLE';
 
-        const taskType = window.taskType || TaskType.Judge;
+        const taskType = window.taskType || TaskType.Response;
 
         this.studyInput = {
             assignmentId,

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { TreatmentType } from 'src/store';
-import { Initial } from 'src/components/common';
+import { Initial } from 'src/components';
 import { styles, lightBulbColored } from 'src/styles';
 
 const getContainerStyle = (received = true) => {

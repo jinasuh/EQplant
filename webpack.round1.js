@@ -5,7 +5,9 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 
-const entry = { app: ['./src/Index.tsx'] };
+const dev = process.env.BUILD_DEV || 'true';
+
+const entry = { app: ['./src/round1/Index.tsx'] };
 
 // make sure the cdn links are always versioned
 const vendorList = [
@@ -73,8 +75,9 @@ const plugins = [
         __DEV__: JSON.stringify(JSON.parse(process.env.BUILD_DEV || 'true'))
     }),
     new HtmlWebpackPlugin({
-        template: 'src/index.html',
+        template: 'src/round1/index.html',
         inject: true,
+        filename: dev ? 'index.html' : 'round1.html',
         vendorJs: getVendorCdnMinJs(),
         vendorCss: vendorCdnCss
     }),

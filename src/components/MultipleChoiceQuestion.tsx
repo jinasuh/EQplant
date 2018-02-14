@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { observer } from 'mobx-react';
 import { action } from 'mobx';
-import { Option, Prompt } from 'src/components/common';
+import { Option, Prompt } from 'src/components';
 
 const style = {
     container: {

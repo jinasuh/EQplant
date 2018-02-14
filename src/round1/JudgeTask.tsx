@@ -18,7 +18,7 @@ import {
     NotAccepted,
     Message,
     Messenger
-} from 'src/components/common';
+} from 'src/components';
 import { leftTopBox } from 'src/styles';
 
 export interface IJudgeTaskProps {

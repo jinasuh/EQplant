@@ -1,15 +1,11 @@
 import * as React from 'react';
 import { observer } from 'mobx-react';
 import { IStoreProps, TaskType } from 'src/store';
-import { ResponseTask } from 'src/components/ResponseTask';
-import { JudgeTask } from 'src/components/JudgeTask';
+import { ResponseTask } from 'src/round1/ResponseTask';
+import { JudgeTask } from 'src/round1/JudgeTask';
 
 @observer
 export class App extends React.Component<IStoreProps, void> {
-    public componentDidMount() {
-        $('.collapsible').collapsible();
-    }
-
     public render() {
         const {
             addData,

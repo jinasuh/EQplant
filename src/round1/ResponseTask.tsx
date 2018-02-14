@@ -1,15 +1,7 @@
 import * as React from 'react';
 import { observer } from 'mobx-react';
 import { DataId, studySetting, demographicQuestions, StudyInputId, TreatmentType, getConversation } from 'src/store';
-import {
-    MultipleChoiceQuestion,
-    Header,
-    Paragraph,
-    SubHeader,
-    Prompt,
-    NotAccepted,
-    Messenger
-} from 'src/components/common';
+import { MultipleChoiceQuestion, Header, Paragraph, SubHeader, Prompt, NotAccepted, Messenger } from 'src/components';
 import { leftTopBox } from 'src/styles';
 
 export interface IResponseTaskProps {

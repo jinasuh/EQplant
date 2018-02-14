@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { action } from 'mobx';
-import { TargetedLabel } from 'src/components/common/TargetedLabel';
+import { TargetedLabel } from 'src/components';
 
 const style = {
     fontWeight: 300

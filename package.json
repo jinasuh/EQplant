@@ -3,8 +3,11 @@
     "version": "1.0.0",
     "description": "",
     "scripts": {
-        "start": "node tools/devServer.js",
-        "build": "rimraf dist && cross-env NODE_ENV=production BUILD_DEV=false webpack -p"
+        "start": "node tools/devServer.js round1",
+        "round1": "node tools/devServer.js round1",
+        "round2": "node tools/devServer.js round2",
+        "build":
+            "rimraf dist && cross-env NODE_ENV=production BUILD_DEV=false webpack --config webpack.round1.js -p && cross-env NODE_ENV=production BUILD_DEV=false webpack --config webpack.round2.js -p"
     },
     "dependencies": {
         "@types/react": "0.14.55",

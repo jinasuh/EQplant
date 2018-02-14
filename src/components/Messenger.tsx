@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { IConversation, TreatmentType } from 'src/store';
-import { Message, Initial } from 'src/components/common';
+import { Message, Initial } from 'src/components';
 import { styles } from 'src/styles';
 
 const containerStyle = {

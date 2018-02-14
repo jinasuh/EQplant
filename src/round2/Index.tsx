@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { App } from 'src/components/App';
+import { App } from 'src/round2/App';
 import { Store } from 'src/store';
 
 const rootElement = document.getElementById('root');
@@ -27,8 +27,8 @@ ReactDOM.render(createUi(App), rootElement);
 
 // Hot Module Replacement APIs
 if (module.hot) {
-    module.hot.accept('./components/App', () => {
-        const NextApp = require<{ App: typeof App }>('./components/App').App;
+    module.hot.accept('./App', () => {
+        const NextApp = require<{ App: typeof App }>('./App').App;
         ReactDOM.render(createUi(NextApp), rootElement);
     });
 }

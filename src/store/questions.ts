@@ -11,14 +11,14 @@ export interface IQuestion {
 
 export const getEmpathyQuestion = (from: string, to: string) => {
     return {
-        question: `Given the conversation, how empathetic was ${to} response to ${from}?`,
+        question: `Given the conversation, how much empathy is shown in ${to}'s response to ${from}?`,
         name: 'empathy',
         options: [
-            { id: 'none', text: 'Not empathetic at all' },
-            { id: 'slightly', text: 'Slightly empathetic' },
-            { id: 'moderate', text: 'Moderately empathetic' },
-            { id: 'very', text: 'Very empathetic' },
-            { id: 'absolutely', text: 'Extremely empathetic' }
+            { id: 'none', text: 'Not at all' },
+            { id: 'slightly', text: 'Slightly' },
+            { id: 'moderately', text: 'Moderately' },
+            { id: 'very', text: 'Very' },
+            { id: 'extremely', text: 'Extremely' }
         ]
     };
 };

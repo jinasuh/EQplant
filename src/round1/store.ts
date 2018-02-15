@@ -1,5 +1,5 @@
 import { action, computed, observable, reaction } from 'mobx';
-import { TaskType } from 'src/store';
+import { TaskType, TreatmentType } from 'src/store';
 import { IAssignment } from 'src/store/config';
 
 export type DataId = 'response' | 'empathy' | 'gender' | 'age' | 'literacy' | 'comment';
@@ -10,8 +10,8 @@ export interface IStudyInput extends IAssignment {
 }
 
 export type StudyInputData = {
-    conversationId?: string;
-    treatmentType?: string;
+    conversationId?: number;
+    treatmentType?: TreatmentType;
     response?: string;
 };
 
@@ -26,12 +26,12 @@ export const getDefaultStudyInputData = (taskType: TaskType) => {
     switch (taskType) {
         case TaskType.Response:
             return <StudyInputData>{
-                treatmentType: '1',
-                conversationId: '1'
+                treatmentType: 1,
+                conversationId: 1
             };
         case TaskType.Judge:
             return <StudyInputData>{
-                conversationId: '2',
+                conversationId: 2,
                 response:
                     'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...'
             };
@@ -45,14 +45,14 @@ export interface IStoreProps {
 export class Store {
     public readonly accepted: boolean = false;
 
-    public readonly studyInput: IStudyInput;
-
     @observable public response: string;
     @observable public empathy: string;
     @observable public gender: string;
     @observable public age: string;
     @observable public literacy: string;
     @observable public comment: string;
+
+    private readonly _studyInput: IStudyInput;
 
     constructor() {
         // Parse query strings
@@ -69,7 +69,7 @@ export class Store {
 
         const taskType = window.taskType || TaskType.Response;
 
-        this.studyInput = {
+        this._studyInput = {
             assignmentId,
             hitId: queryParams['hitId'],
             workerId: queryParams['workerId'],
@@ -77,7 +77,7 @@ export class Store {
             data: window.data || getDefaultStudyInputData(taskType)
         };
 
-        switch (this.studyInput.taskType) {
+        switch (this._studyInput.taskType) {
             case TaskType.Response:
                 reaction(
                     () => this.canSubmitResponseTask,
@@ -99,6 +99,22 @@ export class Store {
                 );
                 break;
         }
+    }
+
+    public get conversationId() {
+        return this._studyInput.data.conversationId;
+    }
+
+    public get submittedResponse() {
+        return this._studyInput.data.response;
+    }
+
+    public get treatmentType() {
+        return this._studyInput.data.treatmentType;
+    }
+
+    public get taskType() {
+        return this._studyInput.taskType;
     }
 
     @computed
@@ -124,17 +140,6 @@ export class Store {
     @action.bound
     public addData(key: DataId, data: string) {
         this[key] = data;
-    }
-
-    @action.bound
-    public getStudyInput(key: string) {
-        const input = (<any>this.studyInput.data)[key];
-
-        if (!input || input.length == 0) {
-            return 'TODOSTRING';
-        }
-
-        return input;
     }
 
     private _isValid(value: string) {

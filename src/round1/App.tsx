@@ -10,11 +10,13 @@ export class App extends React.Component<IStoreProps, void> {
     public render() {
         const {
             addData,
-            getStudyInput,
             canSubmitResponseTask,
             canSubmitJudgeTask,
             accepted,
-            studyInput: { taskType }
+            conversationId,
+            treatmentType,
+            submittedResponse,
+            taskType
         } = this.props.store;
 
         const getTask = () => {
@@ -23,18 +25,20 @@ export class App extends React.Component<IStoreProps, void> {
                     return (
                         <ResponseTask
                             addData={addData}
-                            getStudyInput={getStudyInput}
                             canSubmit={canSubmitResponseTask}
                             accepted={accepted}
+                            conversationId={conversationId}
+                            treatmentType={treatmentType}
                         />
                     );
                 case TaskType.Judge:
                     return (
                         <JudgeTask
                             addData={addData}
-                            getStudyInput={getStudyInput}
                             canSubmit={canSubmitJudgeTask}
                             accepted={accepted}
+                            conversationId={conversationId}
+                            response={submittedResponse}
                         />
                     );
             }

@@ -4,7 +4,7 @@ export interface IMessage {
 }
 
 export interface IConversation {
-    id: string;
+    id: number;
     messages: IMessage[];
     from: string;
     to: string;
@@ -12,13 +12,13 @@ export interface IConversation {
     highConfidence: boolean;
 }
 
-export const getConversation = (conversationId: string) => {
+export const getConversation = (conversationId: number) => {
     return conversations.filter(conv => conv.id === conversationId)[0];
 };
 
 const conversations: IConversation[] = [
     {
-        id: '1',
+        id: 1,
         from: 'David',
         to: 'Unknown',
         anger: false,
@@ -43,7 +43,7 @@ const conversations: IConversation[] = [
         ]
     },
     {
-        id: '2',
+        id: 2,
         from: 'Mom',
         to: 'Unknown',
         anger: true,
@@ -64,7 +64,7 @@ const conversations: IConversation[] = [
         ]
     },
     {
-        id: '3',
+        id: 3,
         from: 'Paula',
         to: 'Unknown',
         anger: true,

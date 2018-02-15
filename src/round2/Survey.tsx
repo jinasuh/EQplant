@@ -1,17 +1,14 @@
 import * as React from 'react';
 import { observer } from 'mobx-react';
-import { DataId } from 'src/round2/store';
+import { IStoreProps } from 'src/round2/store';
 import { Header, Paragraph, MultipleChoiceQuestion, Prompt } from 'src/components';
 import { demographicQuestions } from 'src/store';
 
-export interface ISurveyProps {
-    addData: (key: DataId, data: string) => void;
-}
-
 @observer
-export class Survey extends React.Component<ISurveyProps, void> {
+export class Survey extends React.Component<IStoreProps, void> {
     public render() {
-        const { addData } = this.props;
+        const { store } = this.props;
+        const { addData } = store;
         const questions = demographicQuestions;
 
         const questionViews = questions.map(question => {
@@ -45,7 +42,7 @@ export class Survey extends React.Component<ISurveyProps, void> {
     }
 
     private _onChange(event: React.KeyboardEvent<HTMLTextAreaElement>) {
-        const { addData } = this.props;
+        const { addData } = this.props.store;
         addData('comment', event.currentTarget.value);
     }
 }

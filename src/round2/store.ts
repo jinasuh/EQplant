@@ -1,16 +1,20 @@
 import { action, computed, observable, reaction } from 'mobx';
 import { IAssignment, TreatmentType } from 'src/store';
 import { IStepStore } from 'src/store/stepStore';
-import { IntroductionStore, SurveyStore } from 'src/round2/steps';
+import { IntroductionStore, TasksStore, SurveyStore } from 'src/round2/steps';
 
 export type DataId = 'responses' | 'empathyRatings' | 'gender' | 'age' | 'literacy' | 'comment';
 
+export interface IResponseTask {
+    conversationId: number;
+    treatmentType: TreatmentType;
+}
 export interface IStudyInput extends IAssignment {
-    conversationIds: string[];
-    treatmentTypes: TreatmentType[];
+    tasks: IResponseTask[];
 }
 
 export type StudyInputData = {
+    precision: number;
     conversationIds: string;
     treatmentTypes: string;
 };
@@ -23,8 +27,9 @@ export const studySetting = {
 };
 
 export const defaultStudyInputData = <StudyInputData>{
-    treatmentTypes: '[0,1,0,1,0,1,0,1,0,1,0,1,0,1,0]',
-    conversationIds: '[1,2,3,1,2,3,1,2,3,1,2,3,1,2,3,1,2,3]'
+    precision: 0.6,
+    treatmentTypes: '[0,1,0]',
+    conversationIds: '[1,2,3]'
 };
 
 export interface IStoreProps {
@@ -33,20 +38,21 @@ export interface IStoreProps {
 
 export class Store {
     public readonly accepted: boolean = false;
-
-    public readonly studyInput: IStudyInput;
-
     public readonly steps: IStepStore[] = [];
 
-    @observable public responses: { [conversationId: string]: string } = {};
-    @observable public empathyRatings: { [conversationId: string]: string } = {};
+    @observable public responses: { [conversationId: number]: string } = {};
+    @observable public empathyRatings: { [conversationId: number]: string } = {};
     @observable public gender: string;
     @observable public age: string;
     @observable public literacy: string;
     @observable public comment: string;
 
-    @observable public currentIndex: number = 0;
+    @observable public currentTaskIndex: number = 0;
     @observable public currentStepIndex: number = 0;
+    @observable public currentResponse: string;
+
+    private readonly studyInput: IStudyInput;
+    @observable private _canSubmitResponseTask = false;
 
     constructor() {
         // Parse query strings
@@ -63,16 +69,25 @@ export class Store {
 
         const data = <StudyInputData>window.data || defaultStudyInputData;
 
+        const conversationIds = <number[]>JSON.parse(data.conversationIds);
+        const treatmentTypes = <TreatmentType[]>JSON.parse(data.treatmentTypes);
+        const tasks = conversationIds.map(
+            (cid, idx) =>
+                <IResponseTask>{
+                    conversationId: cid,
+                    treatmentType: treatmentTypes[idx]
+                }
+        );
+
         this.studyInput = <IStudyInput>{
             assignmentId,
             hitId: queryParams['hitId'],
             workerId: queryParams['workerId'],
-            conversationIds: JSON.parse(data.conversationIds),
-            treatmentTypes: JSON.parse(data.treatmentTypes)
+            tasks: tasks
         };
 
         reaction(
-            () => this.canSubmitResponseTask,
+            () => this._canSubmitResponseTask,
             canSubmit => {
                 $('#submitButton')
                     .prop('disabled', !canSubmit)
@@ -81,41 +96,42 @@ export class Store {
         );
 
         const introStore = new IntroductionStore();
+        const tasksStore = new TasksStore();
         const surveyStore = new SurveyStore();
 
         this.steps.push(introStore);
+        this.steps.push(tasksStore);
         this.steps.push(surveyStore);
     }
 
     @computed
-    public get currentConversationId(): string {
-        return this.studyInput.conversationIds[this.currentIndex];
-    }
-
-    @computed
-    public get currentTreatmentType(): TreatmentType {
-        return this.studyInput.treatmentTypes[this.currentIndex];
-    }
-
-    @computed
-    public get canSubmitResponseTask() {
-        return (
-            Object.keys(this.responses).length === 15 &&
-            this._isValid(this.gender) &&
-            this._isValid(this.age) &&
-            this._isValid(this.literacy)
-        );
+    public get tasks(): IResponseTask[] {
+        return this.studyInput.tasks;
     }
 
     @action.bound
     public addData(key: DataId, data: string) {
         this[key] = data;
+        this._canSubmitResponseTask =
+            Object.keys(this.responses).length === this.tasks.length &&
+            this._isValid(this.gender) &&
+            this._isValid(this.age) &&
+            this._isValid(this.literacy);
     }
 
     @action.bound
-    public addResponse(conversationId: string, response: string) {
+    public addResponse(conversationId: number, response: string) {
         this.responses[conversationId] = response;
-        this.currentIndex++;
+        this.currentResponse = this.responses[conversationId];
+    }
+
+    @action.bound
+    public getNextTask() {
+        if (this.currentTaskIndex >= this.tasks.length - 1) {
+            this.completeCurrentStep();
+        } else {
+            this.currentTaskIndex++;
+        }
     }
 
     @action.bound

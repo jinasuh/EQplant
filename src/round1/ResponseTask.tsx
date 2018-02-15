@@ -1,13 +1,14 @@
 import * as React from 'react';
 import { observer } from 'mobx-react';
-import { demographicQuestions, TreatmentType, getConversation } from 'src/store';
-import { DataId, StudyInputId, studySetting } from 'src/round1/store';
-import { MultipleChoiceQuestion, Header, Paragraph, SubHeader, Prompt, NotAccepted, Messenger } from 'src/components';
-import { leftTopBox } from 'src/styles';
+import { demographicQuestions, getConversation, TreatmentType } from 'src/store';
+import { DataId, studySetting } from 'src/round1/store';
+import { MultipleChoiceQuestion, Header, Paragraph, SubHeader, Prompt, NotAccepted } from 'src/components';
+import { MessageResponse } from 'src/components/MessageResponse';
 
 export interface IResponseTaskProps {
     addData: (key: DataId, data: string) => void;
-    getStudyInput: (key: StudyInputId) => string;
+    conversationId: number;
+    treatmentType: TreatmentType;
     canSubmit: boolean;
     accepted: boolean;
 }
@@ -61,56 +62,21 @@ export class ResponseTask extends React.Component<IResponseTaskProps, void> {
     }
 
     private _renderTask() {
-        const { getStudyInput } = this.props;
-        const treatmentType = Number(getStudyInput('treatmentType'));
-        const treatment = treatmentType !== TreatmentType.None;
-        const conversationId = getStudyInput('conversationId');
+        const { conversationId, treatmentType, addData } = this.props;
         const conversation = getConversation(conversationId);
-        const { from, to } = conversation;
-
-        const getHeader = () => {
-            if (treatment) {
-                return (
-                    <div>
-                        <Header>Task</Header>
-                        <Paragraph>
-                            You are using a new chat app to communicate with someone. As you use the app, the chat
-                            assistant will help you understand more about your contacts as you chat with them.
-                        </Paragraph>
-                    </div>
-                );
-            } else {
-                return (
-                    <div>
-                        <Header>Task</Header>
-                    </div>
-                );
-            }
-        };
 
         return (
             <div>
-                <div style={leftTopBox}>
-                    <Messenger conversation={conversation} treatmentType={treatmentType} />
-                    <div>
-                        {getHeader()}
-                        <Paragraph>
-                            You are {to}. You are chatting with {from} through text messages.
-                        </Paragraph>
-                        <div style={{ marginTop: '40px' }}>
-                            <Prompt>
-                                Please read the conversation to the left. Consider the context of the messages and write
-                                a realistic and appropriate response to the latest message from {from}.
-                            </Prompt>
-                        </div>
-                        <textarea
-                            name="response"
-                            placeholder="Your response goes here..."
-                            className="materialize-textarea"
-                            onChange={this._onChange.bind(this)}
-                        />
-                    </div>
-                </div>
+                <Header>Emotion Assistance</Header>
+                <Paragraph>
+                    You are using a new chat app to communicate with someone. As you use the app, the chat assistant
+                    will help you understand more about your contacts as you chat with them.
+                </Paragraph>
+                <MessageResponse
+                    conversation={conversation}
+                    treatmentType={treatmentType}
+                    onChange={response => addData('response', response)}
+                />
             </div>
         );
     }
@@ -141,7 +107,7 @@ export class ResponseTask extends React.Component<IResponseTaskProps, void> {
                             name="comment"
                             className="materialize-textarea"
                             placeholder="Your comments go here..."
-                            onChange={this._onChange.bind(this)}
+                            onChange={e => this._onChange('comment', e)}
                         />
                     </li>
                 </ol>
@@ -149,8 +115,8 @@ export class ResponseTask extends React.Component<IResponseTaskProps, void> {
         );
     }
 
-    private _onChange(event: React.KeyboardEvent<HTMLTextAreaElement>) {
+    private _onChange(key: DataId, event: React.FormEvent<HTMLTextAreaElement>) {
         const { addData } = this.props;
-        addData('comment', event.currentTarget.value);
+        addData(key, event.currentTarget.value);
     }
 }

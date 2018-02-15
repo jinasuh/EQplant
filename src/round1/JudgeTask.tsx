@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { observer } from 'mobx-react';
 import { demographicQuestions, getEmpathyQuestion, TreatmentType, getConversation } from 'src/store';
-import { DataId, studySetting, StudyInputId } from 'src/round1/store';
+import { DataId, studySetting } from 'src/round1/store';
 import {
     MultipleChoiceQuestion,
     Header,
@@ -16,7 +16,8 @@ import { leftTopBox } from 'src/styles';
 
 export interface IJudgeTaskProps {
     addData: (key: DataId, data: string) => void;
-    getStudyInput: (key: StudyInputId) => string;
+    conversationId: number;
+    response: string;
     canSubmit: boolean;
     accepted: boolean;
 }
@@ -70,9 +71,7 @@ export class JudgeTask extends React.Component<IJudgeTaskProps, void> {
     }
 
     private _renderTask() {
-        const { getStudyInput, addData } = this.props;
-        const response = getStudyInput('response');
-        const conversationId = getStudyInput('conversationId');
+        const { response, conversationId, addData } = this.props;
         const conversation = getConversation(conversationId);
         const { from, to } = conversation;
         const empathyQuestion = getEmpathyQuestion(from, to);

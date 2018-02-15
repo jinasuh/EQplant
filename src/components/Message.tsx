@@ -120,19 +120,34 @@ export class Message extends React.Component<IMessageProps, void> {
     }
 
     private _getTreatment(name: string, treatmentType: TreatmentType) {
+        var treatmentString = null;
         switch (treatmentType) {
             case TreatmentType.Default:
-                const iconSource = `data:image/png;base64,${lightBulbColored}`;
-                return (
-                    <div style={defaultTreatmentStyle}>
-                        <img src={iconSource} style={treatmentIconStyle} />
-                        {name} seems angry
-                    </div>
-                );
-
+                treatmentString = `${name} seems angry`;
+                break;
+            case TreatmentType.HighConfidence:
+                treatmentString = `It is very likely that ${name} is angry`;
+                break;
+            case TreatmentType.LowConfidence:
+                treatmentString = `There is a chance that ${name} is angry`;
+                break;
             case TreatmentType.None:
             default:
-                return null;
+                treatmentString = null;
+                break;
+        }
+
+        if (treatmentString) {
+            const iconSource = `data:image/png;base64,${lightBulbColored}`;
+
+            return (
+                <div style={defaultTreatmentStyle}>
+                    <img src={iconSource} style={treatmentIconStyle} />
+                    {treatmentString}
+                </div>
+            );
+        } else {
+            return null;
         }
     }
 }

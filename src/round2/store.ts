@@ -28,8 +28,8 @@ export const studySetting = {
 
 export const defaultStudyInputData = <StudyInputData>{
     precision: 0.6,
-    treatmentTypes: '[0,1,0]',
-    conversationIds: '[1,2,3]'
+    treatmentTypes: '[0,1,2,3]',
+    conversationIds: '[1,2,3,1]'
 };
 
 export interface IStoreProps {

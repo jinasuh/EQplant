@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { observer } from 'mobx-react';
 import { IStoreProps } from 'src/round2/store';
+import { Header, Paragraph } from 'src/components';
 import { MessageResponse } from 'src/components/MessageResponse';
 import { Progress } from 'src/components/Progress';
 import { getConversation } from 'src/store';
@@ -16,6 +17,11 @@ export class Tasks extends React.Component<IStoreProps, void> {
         const conversation = getConversation(conversationId);
         return (
             <div>
+                <Header>Emotion Assistance</Header>
+                <Paragraph>
+                    You are using a new chat app to communicate with someone. As you use the app, the chat assistant
+                    will help you understand more about your contacts as you chat with them.
+                </Paragraph>
                 <Progress percentage={percentage} />
                 <div>
                     <MessageResponse

@@ -9,6 +9,53 @@ export interface IQuestion {
     name: string;
 }
 
+const agreementOptions: IOption[] = [
+    { id: 'strongagree', text: 'Strongly agree' },
+    { id: 'agree', text: 'Agree' },
+    { id: 'neutral', text: 'Neutral' },
+    { id: 'disagree', text: 'Disagree' },
+    { id: 'strongdisagree', text: 'Strongly disagree' }
+];
+
+export const perceptionQuestions: IQuestion[] = [
+    {
+        question: 'I understand what the emotion assistance bases its recommendation on.',
+        name: 'transparency',
+        options: agreementOptions
+    },
+    {
+        question: 'I understand how the emotion assistance works.',
+        name: 'understanding',
+        options: agreementOptions
+    },
+    {
+        question:
+            'I think that the suggested emotions correspond to my understanding of the emotions from the conversation.',
+        name: 'competance',
+        options: agreementOptions
+    },
+    {
+        question: 'The next time I am chatting with someone, I would like to use the emotion assistance.',
+        name: 'intentuse',
+        options: agreementOptions
+    },
+    {
+        question: 'I trust the emotion assistance.',
+        name: 'trust',
+        options: agreementOptions
+    },
+    {
+        question: 'I found the emotion assistance to be useful.',
+        name: 'useful',
+        options: agreementOptions
+    },
+    {
+        question: 'I think the emotion assistance should give an explanation for its suggestions.',
+        name: 'explanation',
+        options: agreementOptions
+    }
+];
+
 export const getEmpathyQuestion = (from: string, to: string) => {
     return {
         question: `Given the conversation, how much empathy is shown in ${to}'s response to ${from}?`,

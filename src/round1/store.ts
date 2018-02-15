@@ -1,6 +1,42 @@
 import { action, computed, observable, reaction } from 'mobx';
-import { IStudyInput, TaskType } from 'src/store';
-import { DataId, getDefaultStudyInputData } from 'src/store/config';
+import { TaskType } from 'src/store';
+import { IAssignment } from 'src/store/config';
+
+export type DataId = 'response' | 'empathy' | 'gender' | 'age' | 'literacy' | 'comment';
+
+export interface IStudyInput extends IAssignment {
+    taskType?: TaskType;
+    data?: StudyInputData;
+}
+
+export type StudyInputData = {
+    conversationId?: string;
+    treatmentType?: string;
+    response?: string;
+};
+
+export type StudyInputId = keyof StudyInputData;
+
+export const studySetting = {
+    compensation: '$0.05',
+    duration: 'about 1 minute'
+};
+
+export const getDefaultStudyInputData = (taskType: TaskType) => {
+    switch (taskType) {
+        case TaskType.Response:
+            return <StudyInputData>{
+                treatmentType: '1',
+                conversationId: '1'
+            };
+        case TaskType.Judge:
+            return <StudyInputData>{
+                conversationId: '2',
+                response:
+                    'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...'
+            };
+    }
+};
 
 export interface IStoreProps {
     store: Store;
@@ -17,8 +53,6 @@ export class Store {
     @observable public age: string;
     @observable public literacy: string;
     @observable public comment: string;
-
-    @observable public currentStepId: number = 0;
 
     constructor() {
         // Parse query strings

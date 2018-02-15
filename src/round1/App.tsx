@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { observer } from 'mobx-react';
-import { IStoreProps, TaskType } from 'src/store';
+import { TaskType } from 'src/store';
+import { IStoreProps } from 'src/round1/store';
 import { ResponseTask } from 'src/round1/ResponseTask';
 import { JudgeTask } from 'src/round1/JudgeTask';
 

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { App } from 'src/round1/App';
-import { Store } from 'src/store';
+import { Store } from 'src/round1/store';
 
 const rootElement = document.getElementById('root');
 

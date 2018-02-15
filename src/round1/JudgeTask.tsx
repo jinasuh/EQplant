@@ -1,14 +1,7 @@
 import * as React from 'react';
 import { observer } from 'mobx-react';
-import {
-    DataId,
-    studySetting,
-    demographicQuestions,
-    getEmpathyQuestion,
-    StudyInputId,
-    TreatmentType,
-    getConversation
-} from 'src/store';
+import { demographicQuestions, getEmpathyQuestion, TreatmentType, getConversation } from 'src/store';
+import { DataId, studySetting, StudyInputId } from 'src/round1/store';
 import {
     MultipleChoiceQuestion,
     Header,

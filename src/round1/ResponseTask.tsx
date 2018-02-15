@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { observer } from 'mobx-react';
-import { DataId, studySetting, demographicQuestions, StudyInputId, TreatmentType, getConversation } from 'src/store';
+import { demographicQuestions, TreatmentType, getConversation } from 'src/store';
+import { DataId, StudyInputId, studySetting } from 'src/round1/store';
 import { MultipleChoiceQuestion, Header, Paragraph, SubHeader, Prompt, NotAccepted, Messenger } from 'src/components';
 import { leftTopBox } from 'src/styles';
 
@@ -150,6 +151,6 @@ export class ResponseTask extends React.Component<IResponseTaskProps, void> {
 
     private _onChange(event: React.KeyboardEvent<HTMLTextAreaElement>) {
         const { addData } = this.props;
-        addData('response', event.currentTarget.value);
+        addData('comment', event.currentTarget.value);
     }
 }

@@ -14,7 +14,6 @@ export interface IStudyInput extends IAssignment {
 }
 
 export type StudyInputData = {
-    precision: number;
     conversationIds: string;
     treatmentTypes: string;
 };
@@ -27,7 +26,6 @@ export const studySetting = {
 };
 
 export const defaultStudyInputData = <StudyInputData>{
-    precision: 0.6,
     treatmentTypes: '[0,1,2,3]',
     conversationIds: '[1,2,3,1]'
 };

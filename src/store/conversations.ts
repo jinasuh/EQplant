@@ -83,55 +83,68 @@ const conversations: IConversation[] = [
     },
     {
         id: 4,
-        from: 'Paula',
+        from: 'John',
         to: 'Unknown',
         anger: true,
-        highConfidence: false,
+        highConfidence: true,
         messages: [
             {
+                received: true,
+                content: 'Did you tell Jane about me drinking last night?'
+            },
+            {
                 received: false,
-                content: 'Did you just hear about the layoffs?'
+                content: 'What? You mean she found out?'
             },
             {
                 received: true,
-                content:
-                    'I didn’t JUST hear about it. I heard about it first thing this morning, because I got laid off. Looks like you got lucky.'
+                content: 'SOMEONE told her. Shit. she’s pissed. I’m pissed at whoevr told her'
             }
         ]
     },
     {
         id: 5,
-        from: 'Paula',
+        from: 'Teri',
         to: 'Unknown',
         anger: true,
-        highConfidence: false,
+        highConfidence: true,
         messages: [
             {
+                received: true,
+                content: 'Did you know that Dave was planning to break up with me on Valentine’s Day?'
+            },
+            {
                 received: false,
-                content: 'Did you just hear about the layoffs?'
+                content: 'Omg im so sorry'
             },
             {
                 received: true,
-                content:
-                    'I didn’t JUST hear about it. I heard about it first thing this morning, because I got laid off. Looks like you got lucky.'
+                content: 'That asshole! I found out accidentally but now i don’t know what i wanna do'
             }
         ]
     },
     {
         id: 6,
-        from: 'Paula',
+        from: 'Jess',
         to: 'Unknown',
         anger: true,
         highConfidence: false,
         messages: [
             {
                 received: false,
-                content: 'Did you just hear about the layoffs?'
+                content: 'I just walked past someone who dressed like you at the Starbucks by work'
             },
             {
                 received: true,
-                content:
-                    'I didn’t JUST hear about it. I heard about it first thing this morning, because I got laid off. Looks like you got lucky.'
+                content: 'Wow, stalker'
+            },
+            {
+                received: false,
+                content: 'It was you?! I thought you gave up coffee'
+            },
+            {
+                received: true,
+                content: 'Forgive my sins'
             }
         ]
     },

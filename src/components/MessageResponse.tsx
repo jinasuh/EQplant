@@ -10,6 +10,7 @@ export interface IMessageResponseProps {
     treatmentType: TreatmentType;
     conversation: IConversation;
     onNext?: () => void;
+    title?: string;
 }
 
 @observer
@@ -18,7 +19,7 @@ export class MessageResponse extends React.Component<IMessageResponseProps, void
     @observable private _text: string = '';
 
     public render() {
-        const { treatmentType, conversation, onNext } = this.props;
+        const { treatmentType, conversation, onNext, title = 'Task' } = this.props;
         const { from, to, id } = conversation;
 
         return (
@@ -26,7 +27,7 @@ export class MessageResponse extends React.Component<IMessageResponseProps, void
                 <div style={leftTopBox}>
                     <Messenger conversation={conversation} treatmentType={treatmentType} />
                     <div>
-                        <Header>Task</Header>
+                        <Header>{title}</Header>
                         <Paragraph>
                             You are {to}. You are chatting with {from} through text messages.
                         </Paragraph>

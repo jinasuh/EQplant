@@ -10,7 +10,8 @@ import {
     Prompt,
     NotAccepted,
     Message,
-    Messenger
+    Messenger,
+    Warning
 } from 'src/components';
 import { leftTopBox } from 'src/styles';
 
@@ -54,7 +55,10 @@ export class JudgeTask extends React.Component<IJudgeTaskProps, void> {
                     will be asked to determine whether the latest message in the conversation is appropriate given the
                     context. Your task should take {duration} to complete. You will be compensated {compensation}.
                 </Paragraph>
-
+                <Warning>
+                    You may only accept one HIT in this group of tasks. We will only pay one unique assignment from one
+                    worker.
+                </Warning>
                 <SubHeader>Eligibility</SubHeader>
                 <Paragraph>
                     Anyone within US is eligible to complete this task. You must have professional or native English

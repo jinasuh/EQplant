@@ -36,6 +36,7 @@ export class Tasks extends React.Component<IStoreProps, void> {
                                 treatmentType={treatmentType}
                                 onChange={response => addResponse(conversationId, response)}
                                 onNext={getNextTask}
+                                title={`Task ${currentTaskIndex + 1} of ${tasks.length}`}
                             />
                         </div>
                     );

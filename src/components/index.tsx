@@ -10,3 +10,4 @@ export * from 'src/components/Message';
 export * from 'src/components/Messenger';
 export * from 'src/components/Initial';
 export * from 'src/components/TargetedLabel';
+export * from 'src/components/Warning';

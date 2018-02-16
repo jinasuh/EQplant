@@ -112,7 +112,7 @@ There are 15 conversations.
 * 1 task = 1 response
 * 200 responses from part 1 = 200 tasks in input file
 * 3 participants per task = 3 assignments per HIT
-* Each row will have ResponseId,TaskType,TreatmentType,ConversationId,Response
+* Each row will have TaskType,TreatmentType,ConversationId,ResponseId,Response
 * ResponseId is the AssignmentId from which the response was pulled
 * 600 assignments x $0.05 = $30
 
@@ -139,7 +139,7 @@ There are 15 conversations.
 * 1 task = 1 response
 * 600 responses from part 1 = 600 tasks in input file
 * 3 participants per response = 3 assignments per HIT
-* Each row will have ResponseId,TaskType,Precision,TreatmentType,ConversationId,Response
+* Each row will have TaskType,Precision,TreatmentType,ConversationId,ResponseId,Response
 * ResponseId is the AssignmentId from which the response was pulled
 * 1800 assignments x $0.05 = $90
 
@@ -166,7 +166,7 @@ There are 15 conversations.
 * 1 task = 1 response
 * 450 responses from part 1 = 450 tasks in input file
 * 3 participants per response = 3 assignments per HIT
-* Each row will have ResponseId,TaskType,Confidence,TreatmentType,ConversationId,Response
+* Each row will have TaskType,Confidence,TreatmentType,ConversationId,ResponseId,Response
 * ResponseId is the AssignmentId from which the response was pulled
 * 1350 assignments x $0.05 = $67.5
 

@@ -2,14 +2,15 @@ import * as React from 'react';
 import { observer } from 'mobx-react';
 import { IStoreProps } from 'src/round2/store';
 import { Header, Paragraph, MultipleChoiceQuestion, Prompt } from 'src/components';
-import { demographicQuestions, perceptionQuestions } from 'src/store';
+import { demographicQuestions, perceptionQuestions, copyAndShuffle } from 'src/store';
 
 @observer
 export class Survey extends React.Component<IStoreProps, void> {
     public render() {
         const { store } = this.props;
         const { addData } = store;
-        const questions = perceptionQuestions.concat(demographicQuestions);
+        const shuffledPerception = copyAndShuffle(perceptionQuestions);
+        const questions = shuffledPerception.concat(demographicQuestions);
 
         const questionViews = questions.map(question => {
             return (

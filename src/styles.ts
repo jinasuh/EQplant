@@ -2,6 +2,7 @@ export const styles = {
     colors: {
         highlight: '#F86B58',
         text: '#212121',
+        warningText: '#c62828',
         sentBackground: '#2979ff',
         receivedBackground: '#eee',
         sentText: 'white',

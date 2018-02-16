@@ -2,7 +2,7 @@ import * as React from 'react';
 import { observer } from 'mobx-react';
 import { demographicQuestions, getConversation, TreatmentType } from 'src/store';
 import { DataId, studySetting } from 'src/round1/store';
-import { MultipleChoiceQuestion, Header, Paragraph, SubHeader, Prompt, NotAccepted } from 'src/components';
+import { MultipleChoiceQuestion, Header, Paragraph, SubHeader, Prompt, NotAccepted, Warning } from 'src/components';
 import { MessageResponse } from 'src/components/MessageResponse';
 
 export interface IResponseTaskProps {
@@ -45,7 +45,10 @@ export class ResponseTask extends React.Component<IResponseTaskProps, void> {
                     will be asked to respond to the last message. Your task should take {duration} to complete. You will
                     be compensated {compensation}.
                 </Paragraph>
-
+                <Warning>
+                    You may only accept one HIT in this group of tasks. We will only pay one unique assignment from one
+                    worker.
+                </Warning>
                 <SubHeader>Eligibility</SubHeader>
                 <Paragraph>
                     Anyone within US is eligible to complete this task. You must have professional or native English

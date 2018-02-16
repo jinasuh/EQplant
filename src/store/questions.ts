@@ -24,14 +24,8 @@ export const perceptionQuestions: IQuestion[] = [
         options: agreementOptions
     },
     {
-        question: 'I understand how the emotion assistance works.',
-        name: 'understanding',
-        options: agreementOptions
-    },
-    {
-        question:
-            'I think that the suggested emotions correspond to my understanding of the emotions from the conversation.',
-        name: 'competance',
+        question: 'I think the emotion assistance accurately describes the emotion in the text messages.',
+        name: 'accuracy',
         options: agreementOptions
     },
     {
@@ -52,6 +46,26 @@ export const perceptionQuestions: IQuestion[] = [
     {
         question: 'I think the emotion assistance should give an explanation for its suggestions.',
         name: 'explanation',
+        options: agreementOptions
+    },
+    {
+        question: 'I think the emotion assistance did not get in the way of the text messaging.',
+        name: 'discreet',
+        options: agreementOptions
+    },
+    {
+        question: 'I think the emotion assistance helped me respond to the messages faster.',
+        name: 'efficiency',
+        options: agreementOptions
+    },
+    {
+        question: 'I think the emotion assistance helped me respond to the messages more appropriately.',
+        name: 'effectiveness',
+        options: agreementOptions
+    },
+    {
+        question: 'I am satisfied with the emotion assistance.',
+        name: 'satisfaction',
         options: agreementOptions
     }
 ];

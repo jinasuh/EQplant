@@ -20,7 +20,7 @@ const conversations: IConversation[] = [
     {
         id: 1,
         from: 'David',
-        to: 'Unknown',
+        to: 'Alex',
         anger: false,
         highConfidence: false,
         messages: [
@@ -38,14 +38,14 @@ const conversations: IConversation[] = [
             },
             {
                 received: true,
-                content: 'They’d better not get cold'
+                content: 'They’d better not get cold :P'
             }
         ]
     },
     {
         id: 2,
         from: 'Mom',
-        to: 'Unknown',
+        to: 'Alex',
         anger: true,
         highConfidence: true,
         messages: [
@@ -295,7 +295,7 @@ const conversations: IConversation[] = [
     {
         id: 15,
         from: 'Paula',
-        to: 'Unknown',
+        to: 'Alex',
         anger: true,
         highConfidence: false,
         messages: [
@@ -307,6 +307,73 @@ const conversations: IConversation[] = [
                 received: true,
                 content:
                     'I didn’t JUST hear about it. I heard about it first thing this morning, because I got laid off. Looks like you got lucky.'
+            }
+        ]
+    },
+    {
+        id: '4',
+        from: 'Jess',
+        to: 'Alex',
+        anger: false,
+        highConfidence: true,
+        messages: [
+            {
+                received: false,
+                content: 'I just walked past someone who dressed like you at the Starbucks by work'
+            },
+            {
+                received: true,
+                content: 'Wow, stalker'
+            },
+            {
+                received: false,
+                content: 'It was you?! I thought you gave up coffee'
+            },
+            {
+                received: true,
+                content: 'Forgive my sins'
+            }
+        ]
+    },
+    {
+        id: '5',
+        from: 'John',
+        to: 'Alex',
+        anger: true,
+        highConfidence: true,
+        messages: [
+            {
+                received: true,
+                content: 'Did you tell Jane about me drinking last night?'
+            },
+            {
+                received: false,
+                content: 'What? You mean she found out?'
+            },
+            {
+                received: true,
+                content: 'SOMEONE told her. Shit. she’s pissed. I’m pissed at whoevr told her'
+            }
+        ]
+    },
+    {
+        id: '6',
+        from: 'Ruby',
+        to: 'Alex',
+        anger: false,
+        highConfidence: true,
+        messages: [
+            {
+                received: true,
+                content: 'Are we still on for tonight?'
+            },
+            {
+                received: false,
+                content: 'Idk. feeling not very sociable right now'
+            },
+            {
+                received: true,
+                content: 'You did this last week too! What’s going on really? Are you okay?'
             }
         ]
     }

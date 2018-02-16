@@ -17,27 +17,27 @@
     For Round 1 Response Tasks
 
     ```
-    window.tastType = "${TaskType}";
+    window.taskType = ${TaskType};
     window.data = {};
-    window.data.conversationId = "${ConversationId}";
-    window.data.treatmentType = "${TreatmentType}";
+    window.data.conversationId = ${ConversationId};
+    window.data.treatmentType = ${TreatmentType};
     ```
 
     For Round 1 Judge Tasks
 
     ```
-    window.tastType = "${TaskType}";
+    window.taskType = ${TaskType};
     window.data = {};
     window.data.responseId = "${ResponseId}";
-    window.data.conversationId = "${ConversationId}";
-    window.data.treatmentType = "${TreatmentType}";
+    window.data.conversationId = ${ConversationId};
+    window.data.treatmentType = ${TreatmentType};
     window.data.response = "${Response}";
     ```
 
     For Round 2 Response Tasks
 
     ```
-    window.tastType = "${TaskType}";
+    window.taskType = ${TaskType};
     window.data = {};
     window.data.precision = "${Precision}";
     window.data.conversationIds = "${ConversationIds}";
@@ -47,7 +47,7 @@
     For Round 2 Judge Tasks
 
     ```
-    window.tastType = "${TaskType}";
+    window.taskType = ${TaskType};
     window.data = {};
     window.data.responseId = "${ResponseId}";
     window.data.precision = "${Precision}";
@@ -59,9 +59,9 @@
     For Round 3 Response Tasks
 
     ```
-    window.tastType = "${TaskType}";
+    window.taskType = ${TaskType};
     window.data = {};
-    window.data.precision = "${Confidence}";
+    window.data.confidence = "${Confidence}";
     window.data.conversationIds = "${ConversationIds}";
     window.data.treatmentTypes = "${TreatmentTypes}";
     ```
@@ -69,10 +69,10 @@
     For Round 3 Judge Tasks
 
     ```
-    window.tastType = "${TaskType}";
+    window.taskType = ${TaskType};
     window.data = {};
     window.data.responseId = "${ResponseId}";
-    window.data.precision = "${Confidence}";
+    window.data.confidence = "${Confidence}";
     window.data.conversationId = "${ConversationId}";
     window.data.treatmentType = "${TreatmentType}";
     window.data.response = "${Response}";

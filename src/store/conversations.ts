@@ -80,5 +80,221 @@ const conversations: IConversation[] = [
                     'I didn’t JUST hear about it. I heard about it first thing this morning, because I got laid off. Looks like you got lucky.'
             }
         ]
+    },
+    {
+        id: 4,
+        from: 'Paula',
+        to: 'Unknown',
+        anger: true,
+        highConfidence: false,
+        messages: [
+            {
+                received: false,
+                content: 'Did you just hear about the layoffs?'
+            },
+            {
+                received: true,
+                content:
+                    'I didn’t JUST hear about it. I heard about it first thing this morning, because I got laid off. Looks like you got lucky.'
+            }
+        ]
+    },
+    {
+        id: 5,
+        from: 'Paula',
+        to: 'Unknown',
+        anger: true,
+        highConfidence: false,
+        messages: [
+            {
+                received: false,
+                content: 'Did you just hear about the layoffs?'
+            },
+            {
+                received: true,
+                content:
+                    'I didn’t JUST hear about it. I heard about it first thing this morning, because I got laid off. Looks like you got lucky.'
+            }
+        ]
+    },
+    {
+        id: 6,
+        from: 'Paula',
+        to: 'Unknown',
+        anger: true,
+        highConfidence: false,
+        messages: [
+            {
+                received: false,
+                content: 'Did you just hear about the layoffs?'
+            },
+            {
+                received: true,
+                content:
+                    'I didn’t JUST hear about it. I heard about it first thing this morning, because I got laid off. Looks like you got lucky.'
+            }
+        ]
+    },
+    {
+        id: 7,
+        from: 'Paula',
+        to: 'Unknown',
+        anger: true,
+        highConfidence: false,
+        messages: [
+            {
+                received: false,
+                content: 'Did you just hear about the layoffs?'
+            },
+            {
+                received: true,
+                content:
+                    'I didn’t JUST hear about it. I heard about it first thing this morning, because I got laid off. Looks like you got lucky.'
+            }
+        ]
+    },
+    {
+        id: 8,
+        from: 'Paula',
+        to: 'Unknown',
+        anger: true,
+        highConfidence: false,
+        messages: [
+            {
+                received: false,
+                content: 'Did you just hear about the layoffs?'
+            },
+            {
+                received: true,
+                content:
+                    'I didn’t JUST hear about it. I heard about it first thing this morning, because I got laid off. Looks like you got lucky.'
+            }
+        ]
+    },
+    {
+        id: 9,
+        from: 'Paula',
+        to: 'Unknown',
+        anger: true,
+        highConfidence: false,
+        messages: [
+            {
+                received: false,
+                content: 'Did you just hear about the layoffs?'
+            },
+            {
+                received: true,
+                content:
+                    'I didn’t JUST hear about it. I heard about it first thing this morning, because I got laid off. Looks like you got lucky.'
+            }
+        ]
+    },
+    {
+        id: 10,
+        from: 'Paula',
+        to: 'Unknown',
+        anger: true,
+        highConfidence: false,
+        messages: [
+            {
+                received: false,
+                content: 'Did you just hear about the layoffs?'
+            },
+            {
+                received: true,
+                content:
+                    'I didn’t JUST hear about it. I heard about it first thing this morning, because I got laid off. Looks like you got lucky.'
+            }
+        ]
+    },
+    {
+        id: 11,
+        from: 'Paula',
+        to: 'Unknown',
+        anger: true,
+        highConfidence: false,
+        messages: [
+            {
+                received: false,
+                content: 'Did you just hear about the layoffs?'
+            },
+            {
+                received: true,
+                content:
+                    'I didn’t JUST hear about it. I heard about it first thing this morning, because I got laid off. Looks like you got lucky.'
+            }
+        ]
+    },
+    {
+        id: 12,
+        from: 'Paula',
+        to: 'Unknown',
+        anger: true,
+        highConfidence: false,
+        messages: [
+            {
+                received: false,
+                content: 'Did you just hear about the layoffs?'
+            },
+            {
+                received: true,
+                content:
+                    'I didn’t JUST hear about it. I heard about it first thing this morning, because I got laid off. Looks like you got lucky.'
+            }
+        ]
+    },
+    {
+        id: 13,
+        from: 'Paula',
+        to: 'Unknown',
+        anger: true,
+        highConfidence: false,
+        messages: [
+            {
+                received: false,
+                content: 'Did you just hear about the layoffs?'
+            },
+            {
+                received: true,
+                content:
+                    'I didn’t JUST hear about it. I heard about it first thing this morning, because I got laid off. Looks like you got lucky.'
+            }
+        ]
+    },
+    {
+        id: 14,
+        from: 'Paula',
+        to: 'Unknown',
+        anger: true,
+        highConfidence: false,
+        messages: [
+            {
+                received: false,
+                content: 'Did you just hear about the layoffs?'
+            },
+            {
+                received: true,
+                content:
+                    'I didn’t JUST hear about it. I heard about it first thing this morning, because I got laid off. Looks like you got lucky.'
+            }
+        ]
+    },
+    {
+        id: 15,
+        from: 'Paula',
+        to: 'Unknown',
+        anger: true,
+        highConfidence: false,
+        messages: [
+            {
+                received: false,
+                content: 'Did you just hear about the layoffs?'
+            },
+            {
+                received: true,
+                content:
+                    'I didn’t JUST hear about it. I heard about it first thing this morning, because I got laid off. Looks like you got lucky.'
+            }
+        ]
     }
 ];

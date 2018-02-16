@@ -54,7 +54,7 @@ function printRound2() {
                 return treatments.indexOf(cid) >= 0 ? 1 : 0;
             });
 
-            console.log(`0,${precision},${JSON.stringify(treatmentTypes)},${JSON.stringify(conversationIds)}`);
+            console.log(`0,${precision},"${JSON.stringify(treatmentTypes)}","${JSON.stringify(conversationIds)}"`);
         });
     }
 }
@@ -70,17 +70,17 @@ function printRound3() {
         // all default treatment
         let conversationIds = copyAndShuffle(all);
         let treatmentTypes = conversationIds.map(cid => (cid <= 10 ? 1 : 0));
-        console.log(`0,Default,${JSON.stringify(treatmentTypes)},${JSON.stringify(conversationIds)}`);
+        console.log(`0,Default,"${JSON.stringify(treatmentTypes)}","${JSON.stringify(conversationIds)}"`);
 
         // high/low treatment
         conversationIds = copyAndShuffle(all);
         treatmentTypes = conversationIds.map(cid => (cid <= 5 ? 2 : cid <= 10 ? 3 : 0));
-        console.log(`0,HighLow,${JSON.stringify(treatmentTypes)},${JSON.stringify(conversationIds)}`);
+        console.log(`0,HighLow,"${JSON.stringify(treatmentTypes)}","${JSON.stringify(conversationIds)}"`);
 
         // high-only treatment
         conversationIds = copyAndShuffle(all);
         treatmentTypes = conversationIds.map(cid => (cid <= 5 ? 2 : 0));
-        console.log(`0,HighOnly,${JSON.stringify(treatmentTypes)},${JSON.stringify(conversationIds)}`);
+        console.log(`0,HighOnly,"${JSON.stringify(treatmentTypes)}","${JSON.stringify(conversationIds)}"`);
     }
 }
 

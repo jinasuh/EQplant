@@ -12,9 +12,6 @@ export class Tasks extends React.Component<IStoreProps, void> {
         const { store: { currentTaskIndex, tasks, addResponse, getNextTask } } = this.props;
 
         const percentage = (currentTaskIndex / tasks.length * 100).toFixed(1);
-        const currentTask = tasks[currentTaskIndex];
-        const { conversationId, treatmentType } = currentTask;
-        const conversation = getConversation(conversationId);
         return (
             <div>
                 <Header>Emotion Assistance</Header>
@@ -23,14 +20,26 @@ export class Tasks extends React.Component<IStoreProps, void> {
                     will help you understand more about your contacts as you chat with them.
                 </Paragraph>
                 <Progress percentage={percentage} />
-                <div>
-                    <MessageResponse
-                        conversation={conversation}
-                        treatmentType={treatmentType}
-                        onChange={response => addResponse(conversationId, response)}
-                        onNext={getNextTask}
-                    />
-                </div>
+                {tasks.map((task, idx) => {
+                    const { conversationId, treatmentType } = task;
+                    const conversation = getConversation(conversationId);
+                    const style =
+                        currentTaskIndex === idx
+                            ? {}
+                            : {
+                                  display: 'none'
+                              };
+                    return (
+                        <div style={style}>
+                            <MessageResponse
+                                conversation={conversation}
+                                treatmentType={treatmentType}
+                                onChange={response => addResponse(conversationId, response)}
+                                onNext={getNextTask}
+                            />
+                        </div>
+                    );
+                })}
             </div>
         );
     }

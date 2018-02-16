@@ -19,7 +19,7 @@ export class MessageResponse extends React.Component<IMessageResponseProps, void
 
     public render() {
         const { treatmentType, conversation, onNext } = this.props;
-        const { from, to } = conversation;
+        const { from, to, id } = conversation;
 
         return (
             <div>
@@ -37,7 +37,7 @@ export class MessageResponse extends React.Component<IMessageResponseProps, void
                             </Prompt>
                         </div>
                         <textarea
-                            name="response"
+                            name={`response-${id}`}
                             placeholder="Your response goes here..."
                             className="materialize-textarea"
                             onChange={this._onChange.bind(this)}
@@ -69,7 +69,6 @@ export class MessageResponse extends React.Component<IMessageResponseProps, void
     private _onNext() {
         const { onNext } = this.props;
         if (onNext) {
-            this._text = '';
             this._canGetNext = false;
             onNext();
         }

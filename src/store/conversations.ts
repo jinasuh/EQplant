@@ -311,7 +311,7 @@ const conversations: IConversation[] = [
         ]
     },
     {
-        id: '4',
+        id: 4,
         from: 'Jess',
         to: 'Alex',
         anger: false,
@@ -336,7 +336,7 @@ const conversations: IConversation[] = [
         ]
     },
     {
-        id: '5',
+        id: 5,
         from: 'John',
         to: 'Alex',
         anger: true,
@@ -357,7 +357,7 @@ const conversations: IConversation[] = [
         ]
     },
     {
-        id: '6',
+        id: 6,
         from: 'Ruby',
         to: 'Alex',
         anger: false,

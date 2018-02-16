@@ -5,7 +5,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
 
-const dev = process.env.BUILD_DEV || 'true';
+const dev = process.env.BUILD_DEV === 'true';
 
 const entry = { app: ['./src/round1/Index.tsx'] };
 

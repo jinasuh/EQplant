@@ -19,26 +19,26 @@ export const getConversation = (conversationId: number) => {
 const conversations: IConversation[] = [
     {
         id: 1,
-        from: 'David',
+        from: 'Kelsey',
         to: 'Alex',
-        anger: false,
-        highConfidence: false,
+        anger: true,
+        highConfidence: true,
         messages: [
             {
                 received: false,
-                content: 'Sorry man, this is taking super long. You can start without me if you want'
+                content: 'Hey babe, we’re talking about doing drinks after work. How’s everything at home?'
             },
             {
                 received: true,
-                content: 'What the fuck dude'
-            },
-            {
-                received: false,
-                content: 'I said I’m sorry lol you can chill for liek 5 minutes i’ll be there with the chicken nuggets'
+                content: 'Ok.'
             },
             {
                 received: true,
-                content: 'They’d better not get cold :P'
+                content: "I'm"
+            },
+            {
+                received: true,
+                content: 'The house is a warzone. Consider yourself warned.'
             }
         ]
     },
@@ -65,26 +65,29 @@ const conversations: IConversation[] = [
     },
     {
         id: 3,
-        from: 'Paula',
-        to: 'Unknown',
+        from: 'Lisa',
+        to: 'Alex',
         anger: true,
-        highConfidence: false,
+        highConfidence: true,
         messages: [
             {
+                received: true,
+                content: 'srsly why do i even stick with this job'
+            },
+            {
                 received: false,
-                content: 'Did you just hear about the layoffs?'
+                content: 'ur boss again?'
             },
             {
                 received: true,
-                content:
-                    'I didn’t JUST hear about it. I heard about it first thing this morning, because I got laid off. Looks like you got lucky.'
+                content: 'nobody grinds my gears like he does!!!'
             }
         ]
     },
     {
         id: 4,
         from: 'John',
-        to: 'Unknown',
+        to: 'Alex',
         anger: true,
         highConfidence: true,
         messages: [
@@ -105,7 +108,7 @@ const conversations: IConversation[] = [
     {
         id: 5,
         from: 'Teri',
-        to: 'Unknown',
+        to: 'Alex',
         anger: true,
         highConfidence: true,
         messages: [
@@ -126,7 +129,7 @@ const conversations: IConversation[] = [
     {
         id: 6,
         from: 'Jess',
-        to: 'Unknown',
+        to: 'Alex',
         anger: true,
         highConfidence: false,
         messages: [
@@ -140,18 +143,18 @@ const conversations: IConversation[] = [
             },
             {
                 received: false,
-                content: 'It was you?! I thought you gave up coffee'
+                content: 'It was you?! I thought you gave up coffee because of your diet thing'
             },
             {
                 received: true,
-                content: 'Forgive my sins'
+                content: "i couldn't keep up with it ok? forgive my sins"
             }
         ]
     },
     {
         id: 7,
         from: 'Paula',
-        to: 'Unknown',
+        to: 'Alex',
         anger: true,
         highConfidence: false,
         messages: [
@@ -168,200 +171,98 @@ const conversations: IConversation[] = [
     },
     {
         id: 8,
-        from: 'Paula',
-        to: 'Unknown',
+        from: 'Sarah',
+        to: 'Alex',
         anger: true,
         highConfidence: false,
         messages: [
             {
                 received: false,
-                content: 'Did you just hear about the layoffs?'
+                content: 'Um, i accidentally took a nap'
             },
             {
                 received: true,
-                content:
-                    'I didn’t JUST hear about it. I heard about it first thing this morning, because I got laid off. Looks like you got lucky.'
+                content: 'K.'
+            },
+            {
+                received: false,
+                content: 'Leaving now. Think i should uber or take the bus?'
+            },
+            {
+                received: true,
+                content: 'K.'
             }
         ]
     },
     {
         id: 9,
-        from: 'Paula',
-        to: 'Unknown',
+        from: 'Jeremy',
+        to: 'Alex',
         anger: true,
         highConfidence: false,
         messages: [
             {
-                received: false,
-                content: 'Did you just hear about the layoffs?'
+                received: true,
+                content: "I need some help"
             },
             {
                 received: true,
-                content:
-                    'I didn’t JUST hear about it. I heard about it first thing this morning, because I got laid off. Looks like you got lucky.'
+                content: "Hello? Can I get some help please??"
             }
         ]
     },
     {
         id: 10,
-        from: 'Paula',
-        to: 'Unknown',
+        from: 'Juliet',
+        to: 'Alex',
         anger: true,
         highConfidence: false,
         messages: [
             {
+                received: true,
+                content: 'pro tip do not forget umbrellas on rainy days'
+            },
+            {
                 received: false,
-                content: 'Did you just hear about the layoffs?'
+                content: 'oh no... are you all drenched?'
             },
             {
                 received: true,
-                content:
-                    'I didn’t JUST hear about it. I heard about it first thing this morning, because I got laid off. Looks like you got lucky.'
+                content: 'mostly because a car sped by and there happened to be a puddle. ugh!'
             }
         ]
     },
     {
         id: 11,
-        from: 'Paula',
-        to: 'Unknown',
-        anger: true,
-        highConfidence: false,
+        from: 'David',
+        to: 'Alex',
+        anger: false,
+        highConfidence: true,
         messages: [
             {
                 received: false,
-                content: 'Did you just hear about the layoffs?'
+                content: 'Sorry man, this is taking super long. You can start without me if you want'
             },
             {
                 received: true,
-                content:
-                    'I didn’t JUST hear about it. I heard about it first thing this morning, because I got laid off. Looks like you got lucky.'
+                content: 'What the fuck dude'
+            },
+            {
+                received: false,
+                content: 'I said I’m sorry lol you can chill for liek 5 minutes i’ll be there with the chicken nuggets'
+            },
+            {
+                received: true,
+                content: 'They’d better not get cold :P'
             }
         ]
     },
     {
         id: 12,
-        from: 'Paula',
-        to: 'Unknown',
-        anger: true,
-        highConfidence: false,
-        messages: [
-            {
-                received: false,
-                content: 'Did you just hear about the layoffs?'
-            },
-            {
-                received: true,
-                content:
-                    'I didn’t JUST hear about it. I heard about it first thing this morning, because I got laid off. Looks like you got lucky.'
-            }
-        ]
-    },
-    {
-        id: 13,
-        from: 'Paula',
-        to: 'Unknown',
-        anger: true,
-        highConfidence: false,
-        messages: [
-            {
-                received: false,
-                content: 'Did you just hear about the layoffs?'
-            },
-            {
-                received: true,
-                content:
-                    'I didn’t JUST hear about it. I heard about it first thing this morning, because I got laid off. Looks like you got lucky.'
-            }
-        ]
-    },
-    {
-        id: 14,
-        from: 'Paula',
-        to: 'Unknown',
-        anger: true,
-        highConfidence: false,
-        messages: [
-            {
-                received: false,
-                content: 'Did you just hear about the layoffs?'
-            },
-            {
-                received: true,
-                content:
-                    'I didn’t JUST hear about it. I heard about it first thing this morning, because I got laid off. Looks like you got lucky.'
-            }
-        ]
-    },
-    {
-        id: 15,
-        from: 'Paula',
-        to: 'Alex',
-        anger: true,
-        highConfidence: false,
-        messages: [
-            {
-                received: false,
-                content: 'Did you just hear about the layoffs?'
-            },
-            {
-                received: true,
-                content:
-                    'I didn’t JUST hear about it. I heard about it first thing this morning, because I got laid off. Looks like you got lucky.'
-            }
-        ]
-    },
-    {
-        id: 4,
-        from: 'Jess',
-        to: 'Alex',
-        anger: false,
-        highConfidence: true,
-        messages: [
-            {
-                received: false,
-                content: 'I just walked past someone who dressed like you at the Starbucks by work'
-            },
-            {
-                received: true,
-                content: 'Wow, stalker'
-            },
-            {
-                received: false,
-                content: 'It was you?! I thought you gave up coffee'
-            },
-            {
-                received: true,
-                content: 'Forgive my sins'
-            }
-        ]
-    },
-    {
-        id: 5,
-        from: 'John',
-        to: 'Alex',
-        anger: true,
-        highConfidence: true,
-        messages: [
-            {
-                received: true,
-                content: 'Did you tell Jane about me drinking last night?'
-            },
-            {
-                received: false,
-                content: 'What? You mean she found out?'
-            },
-            {
-                received: true,
-                content: 'SOMEONE told her. Shit. she’s pissed. I’m pissed at whoevr told her'
-            }
-        ]
-    },
-    {
-        id: 6,
         from: 'Ruby',
         to: 'Alex',
         anger: false,
-        highConfidence: true,
+        highConfidence: false,
         messages: [
             {
                 received: true,
@@ -374,6 +275,73 @@ const conversations: IConversation[] = [
             {
                 received: true,
                 content: 'You did this last week too! What’s going on really? Are you okay?'
+            }
+        ]
+    },
+    {
+        id: 13,
+        from: 'Joey',
+        to: 'Alex',
+        anger: false,
+        highConfidence: false,
+        messages: [
+            {
+                received: false,
+                content: 'Did you see my email?'
+            },
+            {
+                received: true,
+                content: 'No. What did you say?'
+            },
+            {
+                received: false,
+                content: "I couldn't get enough tickets for all of us but only got three"
+            },
+            {
+                received: true,
+                content: "That's a problem"
+            }
+        ]
+    },
+    {
+        id: 14,
+        from: 'Fei',
+        to: 'Alex',
+        anger: false,
+        highConfidence: true,
+        messages: [
+            {
+                received: true,
+                content: "Can you call me when you have a moment? I need to ask your opinion on something"
+            },
+            {
+                received: false,
+                content: 'Is 2pm okay? I can step out of this if you need'
+            },
+            {
+                received: true,
+                content: 'No problem :)'
+            }
+        ]
+    },
+    {
+        id: 15,
+        from: 'Arjun',
+        to: 'Alex',
+        anger: false,
+        highConfidence: true,
+        messages: [
+            {
+                received: true,
+                content: 'Sorry about yesterday. I had no idea where I left my wallet'
+            },
+            {
+                received: false,
+                content: 'Did you find it yet? Also no worries, yesterday was on me'
+            },
+            {
+                received: true,
+                content: 'Still looking, but I canceled my credit cards'
             }
         ]
     }

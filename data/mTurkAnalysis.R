@@ -57,10 +57,34 @@ R3$ConversationId <- factor(R3$ConversationId, lvlsConversationId)
 # Round 1 analysis
 # r1 <- subset(R1, select = c("Empathy","Treatment","Round"))
 r1aov = aov(R1$Empathy ~ R1$Treatment * R1$ConversationId)
+boxplot(R1$Empathy ~ R1$Treatment * R1$ConversationId)
 TukeyHSD(r1aov)
 
+r1aov = aov(R1$Empathy ~ R1$Treatment)
+plot(R1$Empathy ~ R1$Treatment)
+TukeyHSD(r1aov)
+
+
 # Round 2 analysis
-r2 = aggregate(R2$Empathy, list(id = R2$ResponseId), FUN = mean)
+r2 = aggregate(Empathy ~ ResponseId + Precision, data = R2, FUN = mean)
+r2aov = aov(r2$Empathy ~ r2$Precision)
+TukeyHSD(r2aov)
+plot(r2$Empathy ~ r2$Precision)
+summary(r2)
+
+# Round 3 analysis
+r3 = aggregate(Empathy ~ ResponseId + Confidence, data = R3, FUN = mean)
+r3aov = aov(r3$Empathy ~ r3$Confidence)
+TukeyHSD(r3aov)
+plot(r3$Empathy ~ r3$Confidence)
+summary(r3)
+
+### summary of what we want
+# within round 1, T0 v T1
+# within round 2, Precision for the whole person
+# within round 3, Confidence for the whole
+
+### graveyard
 # r2 <- subset(R2, select = c("Empathy","Round"))
 # r3 <- subset(R3, select = c("Empathy","Round"))
 
@@ -68,7 +92,3 @@ r2 = aggregate(R2$Empathy, list(id = R2$ResponseId), FUN = mean)
 # mega$Round <- factor(mega$Round, c("1", "2", "3"))
 # aov.out <- aov(mega$Empathy ~ mega$Round)
 # TukeyHSD(aov.out)
-
-# within round 1, T0 v T1
-# within round 2, Precision for the whole person
-# within round 3, Confidence for the whole

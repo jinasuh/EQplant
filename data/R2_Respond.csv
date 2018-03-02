@@ -1,0 +1,601 @@
+TaskType,Precision,TreatmentType,ConversationId,ResponseId,Response
+1,0.6,1,1,3TVSS0C0E2WZH9B7RI4C7NXJJHDTWG,Right...I'll be home as soon as work is finished. Hang in there!
+1,0.6,0,2,3TVSS0C0E2WZH9B7RI4C7NXJJHDTWG,"Sorry. If you're there, would you mind taking it out?"
+1,0.6,1,3,3TVSS0C0E2WZH9B7RI4C7NXJJHDTWG,What'd he do today?
+1,0.6,0,4,3TVSS0C0E2WZH9B7RI4C7NXJJHDTWG,"Wasn't me, man."
+1,0.6,1,5,3TVSS0C0E2WZH9B7RI4C7NXJJHDTWG,I don't know what to tell you...
+1,0.6,1,6,3TVSS0C0E2WZH9B7RI4C7NXJJHDTWG,Sorry. I was just trying to make a joke about you being a fashion leader or something...guess that didn't work too well.
+1,0.6,1,7,3TVSS0C0E2WZH9B7RI4C7NXJJHDTWG,Oh. Hell. I'm really sorry to hear that.
+1,0.6,0,8,3TVSS0C0E2WZH9B7RI4C7NXJJHDTWG,I'm catching an uber. Be there soon.
+1,0.6,0,9,3TVSS0C0E2WZH9B7RI4C7NXJJHDTWG,"Sorry, I didn't see your message immediately. What did you need?"
+1,0.6,1,10,3TVSS0C0E2WZH9B7RI4C7NXJJHDTWG,"Well...than the umbrella probably wouldn't have helped, right?"
+1,0.6,1,11,3TVSS0C0E2WZH9B7RI4C7NXJJHDTWG,"They'll be fine. Again, really sorry!"
+1,0.6,1,12,3TVSS0C0E2WZH9B7RI4C7NXJJHDTWG,I've kind of got a lot on my mind recently.
+1,0.6,1,13,3TVSS0C0E2WZH9B7RI4C7NXJJHDTWG,What do you want to do?
+1,0.6,0,14,3TVSS0C0E2WZH9B7RI4C7NXJJHDTWG,Ok. See you then.
+1,0.6,1,15,3TVSS0C0E2WZH9B7RI4C7NXJJHDTWG,Is there anything I can do to help?
+1,0.7,1,1,3X31TUMD7YIIXVNZLLD0S6X8TRAL1Y,"Ok, we'll let me know if you want me home."
+1,0.7,0,2,3X31TUMD7YIIXVNZLLD0S6X8TRAL1Y,It won't happen again.
+1,0.7,1,3,3X31TUMD7YIIXVNZLLD0S6X8TRAL1Y,Just ignore them.
+1,0.7,1,4,3X31TUMD7YIIXVNZLLD0S6X8TRAL1Y,Wasn't me!
+1,0.7,1,5,3X31TUMD7YIIXVNZLLD0S6X8TRAL1Y,We should meet and talk.
+1,0.7,1,6,3X31TUMD7YIIXVNZLLD0S6X8TRAL1Y,"I am just joking, no harm meant."
+1,0.7,1,7,3X31TUMD7YIIXVNZLLD0S6X8TRAL1Y,"I am so sorry, I am sure I will be next."
+1,0.7,0,8,3X31TUMD7YIIXVNZLLD0S6X8TRAL1Y,UBER OR BUS?
+1,0.7,0,9,3X31TUMD7YIIXVNZLLD0S6X8TRAL1Y,"Yes, what do you need?"
+1,0.7,1,10,3X31TUMD7YIIXVNZLLD0S6X8TRAL1Y,"Haha, it happens."
+1,0.7,1,11,3X31TUMD7YIIXVNZLLD0S6X8TRAL1Y,If they are cold you can heat them up.
+1,0.7,1,12,3X31TUMD7YIIXVNZLLD0S6X8TRAL1Y,"Yes I am fine, never mind I will go."
+1,0.7,0,13,3X31TUMD7YIIXVNZLLD0S6X8TRAL1Y,So who will be left out?
+1,0.7,0,14,3X31TUMD7YIIXVNZLLD0S6X8TRAL1Y,"Great, I will call then."
+1,0.7,1,15,3X31TUMD7YIIXVNZLLD0S6X8TRAL1Y,"Good look, I know that is a pain."
+1,0.8,1,1,3TE3O8573140PE0899AAJ1GCRPE2RN,Roger that.  I'll be prepared.
+1,0.8,1,2,3TE3O8573140PE0899AAJ1GCRPE2RN,Sorry Mom.  I'll remember next time.
+1,0.8,1,3,3TE3O8573140PE0899AAJ1GCRPE2RN,"He's a jerk, you should start looking for a new job."
+1,0.8,1,4,3TE3O8573140PE0899AAJ1GCRPE2RN,That sucks bro.
+1,0.8,1,5,3TE3O8573140PE0899AAJ1GCRPE2RN,You should break up with him before he breaks up with you.
+1,0.8,1,6,3TE3O8573140PE0899AAJ1GCRPE2RN,You are forgiven.  Next time we can go together.
+1,0.8,1,7,3TE3O8573140PE0899AAJ1GCRPE2RN,I'm so sorry to hear that Paula.
+1,0.8,0,8,3TE3O8573140PE0899AAJ1GCRPE2RN,You are not help at all.  Guess I'll uber.
+1,0.8,0,9,3TE3O8573140PE0899AAJ1GCRPE2RN,What's up?  I'm here to help.
+1,0.8,1,10,3TE3O8573140PE0899AAJ1GCRPE2RN,"That really sucks, sorry that happened to you."
+1,0.8,1,11,3TE3O8573140PE0899AAJ1GCRPE2RN,They won't bro.  I'm almost there.
+1,0.8,0,12,3TE3O8573140PE0899AAJ1GCRPE2RN,I'm okay.  Just don't really feel like being around people.
+1,0.8,0,13,3TE3O8573140PE0899AAJ1GCRPE2RN,Yes it is.  Any advice on what I should do?
+1,0.8,0,14,3TE3O8573140PE0899AAJ1GCRPE2RN,Okay.  Talk to you at 2.
+1,0.8,1,15,3TE3O8573140PE0899AAJ1GCRPE2RN,That's good.  I hope you find it.
+1,0.9,1,1,3SKEMFQBZ41POPP2Z6AESG71IXG8K7,"Why, what's going on?!"
+1,0.9,1,2,3SKEMFQBZ41POPP2Z6AESG71IXG8K7,"I'm sorry Mom, I'll take care of it."
+1,0.9,1,3,3SKEMFQBZ41POPP2Z6AESG71IXG8K7,What did he do this time?
+1,0.9,1,4,3SKEMFQBZ41POPP2Z6AESG71IXG8K7,Well I certainly didn't tell her. That's insane though.
+1,0.9,1,5,3SKEMFQBZ41POPP2Z6AESG71IXG8K7,Do you want to try to save the relationship?
+1,0.9,1,6,3SKEMFQBZ41POPP2Z6AESG71IXG8K7,"I'm sorry Jess, I didn't mean it like that"
+1,0.9,1,7,3SKEMFQBZ41POPP2Z6AESG71IXG8K7,"Oh no Paula, I'm so sorry. I'm here for you if you'd like to talk."
+1,0.9,1,8,3SKEMFQBZ41POPP2Z6AESG71IXG8K7,What's wrong Sarah?
+1,0.9,0,9,3SKEMFQBZ41POPP2Z6AESG71IXG8K7,"Sure Jeremy, what's up?"
+1,0.9,1,10,3SKEMFQBZ41POPP2Z6AESG71IXG8K7,"Wow, that's awful. People can be so inconsiderate."
+1,0.9,0,11,3SKEMFQBZ41POPP2Z6AESG71IXG8K7,Lol you have a microwave.
+1,0.9,0,12,3SKEMFQBZ41POPP2Z6AESG71IXG8K7,"Yeah, I'm fine really. I do appreciate your concern."
+1,0.9,0,13,3SKEMFQBZ41POPP2Z6AESG71IXG8K7,"Yeah, any ideas on a solution?"
+1,0.9,0,14,3SKEMFQBZ41POPP2Z6AESG71IXG8K7,"Ok, I'll call you at 2 then."
+1,0.9,1,15,3SKEMFQBZ41POPP2Z6AESG71IXG8K7,"That's a good idea. I know it's a hassle, but it will be alright."
+1,0.6,1,1,3EA3QWIZ4JRHGER2210X6WOB469ITS,I'm what? What do you mean it's a warzone?
+1,0.6,0,2,3EA3QWIZ4JRHGER2210X6WOB469ITS,I'm sorry Mom. I'll be there to clean up the mess and take out the trash.
+1,0.6,1,3,3EA3QWIZ4JRHGER2210X6WOB469ITS,"Welp, I think it's time for you to start looking for a new job. Either that or find a way to deal with your current boss!"
+1,0.6,0,4,3EA3QWIZ4JRHGER2210X6WOB469ITS,"Well, it wasn't me. You know I'm not like that. Come on!"
+1,0.6,1,5,3EA3QWIZ4JRHGER2210X6WOB469ITS,"Just break up with him first, beat him to it."
+1,0.6,1,6,3EA3QWIZ4JRHGER2210X6WOB469ITS,You are forgiven my child. Now apologize for calling me a stalker!
+1,0.6,1,7,3EA3QWIZ4JRHGER2210X6WOB469ITS,"Nah, not lucky. I have seniority is why I didn't get laid off."
+1,0.6,0,8,3EA3QWIZ4JRHGER2210X6WOB469ITS,What do you mean 'K'? What kind of an answer it that?
+1,0.6,0,9,3EA3QWIZ4JRHGER2210X6WOB469ITS,"Hey sorry, I was in the bathroom. What do you need help with?"
+1,0.6,1,10,3EA3QWIZ4JRHGER2210X6WOB469ITS,"Well, an umbrella wouldn't have helped there! lol"
+1,0.6,1,11,3EA3QWIZ4JRHGER2210X6WOB469ITS,"Yeah, no worries. Unless I eat them all on the way :p"
+1,0.6,1,12,3EA3QWIZ4JRHGER2210X6WOB469ITS,"I'm okay, just don't feel like hanging out most nights because I'm tired from work."
+1,0.6,1,13,3EA3QWIZ4JRHGER2210X6WOB469ITS,Since you seem angry about it I'll just not go.
+1,0.6,0,14,3EA3QWIZ4JRHGER2210X6WOB469ITS,"Okay, 2 pm it is then."
+1,0.6,1,15,3EA3QWIZ4JRHGER2210X6WOB469ITS,"That sucks, it's always a hassle when you lose your wallet."
+1,0.7,1,1,33M4IA01QHX1QU35XYV39RA84YEXRS,Its ok. Just get the kids taken care of and do what you can. Love you.
+1,0.7,0,2,33M4IA01QHX1QU35XYV39RA84YEXRS,"Im sorry Mom, was running late."
+1,0.7,1,3,33M4IA01QHX1QU35XYV39RA84YEXRS,"Money is good, gotta keep trucking on chica"
+1,0.7,1,4,33M4IA01QHX1QU35XYV39RA84YEXRS,I didnt say a word I swear.
+1,0.7,1,5,33M4IA01QHX1QU35XYV39RA84YEXRS,Atleast you know ahead of time and you are not bllind sided. Call me if you need to talk
+1,0.7,1,6,33M4IA01QHX1QU35XYV39RA84YEXRS,We all need a little coffee now and then
+1,0.7,1,7,33M4IA01QHX1QU35XYV39RA84YEXRS,Im soo sorry.  Did they save why?
+1,0.7,0,8,33M4IA01QHX1QU35XYV39RA84YEXRS,"What do you think, Bus or uber?"
+1,0.7,0,9,33M4IA01QHX1QU35XYV39RA84YEXRS,"Sorry, phone was on the charger, whats up"
+1,0.7,1,10,33M4IA01QHX1QU35XYV39RA84YEXRS,Oh no! Never walk near puddles! lol
+1,0.7,1,11,33M4IA01QHX1QU35XYV39RA84YEXRS,Im going as fast as I can.
+1,0.7,1,12,33M4IA01QHX1QU35XYV39RA84YEXRS,"Yea, just alot on my plate right now."
+1,0.7,0,13,33M4IA01QHX1QU35XYV39RA84YEXRS,"Im not sure what to do, We all want to go but I couldnt get enough."
+1,0.7,0,14,33M4IA01QHX1QU35XYV39RA84YEXRS,"Ok Ill give you a call then,"
+1,0.7,1,15,33M4IA01QHX1QU35XYV39RA84YEXRS,"Man that sucks,  its gonna take a min to get replacements."
+1,0.8,1,1,3DYGAII7PM4W5KMEYSWMAOE06D3QPW,So does that mean you're in or out?
+1,0.8,1,2,3DYGAII7PM4W5KMEYSWMAOE06D3QPW,Sorry.
+1,0.8,1,3,3DYGAII7PM4W5KMEYSWMAOE06D3QPW,Start looking for a new job. I'll help!!
+1,0.8,1,4,3DYGAII7PM4W5KMEYSWMAOE06D3QPW,Well I'm not sure what to tell you man.
+1,0.8,1,5,3DYGAII7PM4W5KMEYSWMAOE06D3QPW,Drink tonight on me?
+1,0.8,1,6,3DYGAII7PM4W5KMEYSWMAOE06D3QPW,You devil girl!!!!
+1,0.8,1,7,3DYGAII7PM4W5KMEYSWMAOE06D3QPW,Sorry to hear that.
+1,0.8,0,8,3DYGAII7PM4W5KMEYSWMAOE06D3QPW,Uber or bus?
+1,0.8,0,9,3DYGAII7PM4W5KMEYSWMAOE06D3QPW,"Yes, sorry. Whats up?"
+1,0.8,1,10,3DYGAII7PM4W5KMEYSWMAOE06D3QPW,That really sucks.
+1,0.8,1,11,3DYGAII7PM4W5KMEYSWMAOE06D3QPW,If they are you have to eat them regardless. Be grateful you asshole.
+1,0.8,0,12,3DYGAII7PM4W5KMEYSWMAOE06D3QPW,Yes I'm fine. I just don't feel like doing anything.
+1,0.8,0,13,3DYGAII7PM4W5KMEYSWMAOE06D3QPW,I'm not sure what to do.
+1,0.8,0,14,3DYGAII7PM4W5KMEYSWMAOE06D3QPW,Sounds good. Talk to you soon.
+1,0.8,1,15,3DYGAII7PM4W5KMEYSWMAOE06D3QPW,I hope you find it. That sucks.
+1,0.9,1,1,3UOUJI6MTEAT6MVM1SQ8E2XSBXIXUW,Ten four.
+1,0.9,1,2,3UOUJI6MTEAT6MVM1SQ8E2XSBXIXUW,I'll remember next time.
+1,0.9,1,3,3UOUJI6MTEAT6MVM1SQ8E2XSBXIXUW,What'd he do this time?
+1,0.9,1,4,3UOUJI6MTEAT6MVM1SQ8E2XSBXIXUW,"Sorry, John. It wasn't me though."
+1,0.9,1,5,3UOUJI6MTEAT6MVM1SQ8E2XSBXIXUW,You wanna talk about it?
+1,0.9,1,6,3UOUJI6MTEAT6MVM1SQ8E2XSBXIXUW,I'm sorry. I didn't mean to be judgmental.
+1,0.9,1,7,3UOUJI6MTEAT6MVM1SQ8E2XSBXIXUW,I'm so sorry to hear that. I didn't know.
+1,0.9,1,8,3UOUJI6MTEAT6MVM1SQ8E2XSBXIXUW,I'll be there soon.
+1,0.9,0,9,3UOUJI6MTEAT6MVM1SQ8E2XSBXIXUW,Tell me what you need.
+1,0.9,1,10,3UOUJI6MTEAT6MVM1SQ8E2XSBXIXUW,What luck!
+1,0.9,0,11,3UOUJI6MTEAT6MVM1SQ8E2XSBXIXUW,They'll be edible. That's all I'll promise.
+1,0.9,0,12,3UOUJI6MTEAT6MVM1SQ8E2XSBXIXUW,I'll be fine.
+1,0.9,0,13,3UOUJI6MTEAT6MVM1SQ8E2XSBXIXUW,Yeah. What do you think we should do?
+1,0.9,0,14,3UOUJI6MTEAT6MVM1SQ8E2XSBXIXUW,Alright. Talk to you then.
+1,0.9,1,15,3UOUJI6MTEAT6MVM1SQ8E2XSBXIXUW,Lemme know if I can help.
+1,0.6,1,1,3Y4W8Q93L0GFLVF5FIZ1GHWJ9MFVDH,"uh oh, i can't wait to see"
+1,0.6,0,2,3Y4W8Q93L0GFLVF5FIZ1GHWJ9MFVDH,"i said i was sorry, it slipped my mind"
+1,0.6,1,3,3Y4W8Q93L0GFLVF5FIZ1GHWJ9MFVDH,have you tried looking for a new job?
+1,0.6,0,4,3Y4W8Q93L0GFLVF5FIZ1GHWJ9MFVDH,"Wasn't me man, Thats not my place"
+1,0.6,1,5,3Y4W8Q93L0GFLVF5FIZ1GHWJ9MFVDH,"Confront him first, he can not get away with that"
+1,0.6,1,6,3Y4W8Q93L0GFLVF5FIZ1GHWJ9MFVDH,"geez, calm down"
+1,0.6,1,7,3Y4W8Q93L0GFLVF5FIZ1GHWJ9MFVDH,I am so sorry.
+1,0.6,0,8,3Y4W8Q93L0GFLVF5FIZ1GHWJ9MFVDH,guess i won't be on my way.
+1,0.6,0,9,3Y4W8Q93L0GFLVF5FIZ1GHWJ9MFVDH,What can i help you with?
+1,0.6,1,10,3Y4W8Q93L0GFLVF5FIZ1GHWJ9MFVDH,I hate when that happens
+1,0.6,1,11,3Y4W8Q93L0GFLVF5FIZ1GHWJ9MFVDH,Hahah wait and see what happens
+1,0.6,1,12,3Y4W8Q93L0GFLVF5FIZ1GHWJ9MFVDH,I just haven't been feeling myself.
+1,0.6,1,13,3Y4W8Q93L0GFLVF5FIZ1GHWJ9MFVDH,"yeah, guess we have to figure it out"
+1,0.6,0,14,3Y4W8Q93L0GFLVF5FIZ1GHWJ9MFVDH,I will wait for your call
+1,0.6,1,15,3Y4W8Q93L0GFLVF5FIZ1GHWJ9MFVDH,thats great
+1,0.7,1,1,3YMTUJH0DTCN87SNHCYTCVESZPL4TE,Okay thats okay i will see you soon !
+1,0.7,0,2,3YMTUJH0DTCN87SNHCYTCVESZPL4TE,Im sorry i promise i will take it out more often
+1,0.7,1,3,3YMTUJH0DTCN87SNHCYTCVESZPL4TE,I think you should really start looking for a new job
+1,0.7,1,4,3YMTUJH0DTCN87SNHCYTCVESZPL4TE,I did not tell her im sorry she found out
+1,0.7,1,5,3YMTUJH0DTCN87SNHCYTCVESZPL4TE,I think you should wait it out maybe he wont break up with you
+1,0.7,1,6,3YMTUJH0DTCN87SNHCYTCVESZPL4TE,Its okay just keep trying you will give it up soon !
+1,0.7,1,7,3YMTUJH0DTCN87SNHCYTCVESZPL4TE,Im sorry to hear that :/ i can help you look for jobs today
+1,0.7,0,8,3YMTUJH0DTCN87SNHCYTCVESZPL4TE,Okay that really helps out ..
+1,0.7,0,9,3YMTUJH0DTCN87SNHCYTCVESZPL4TE,Hey im here to help whats up
+1,0.7,1,10,3YMTUJH0DTCN87SNHCYTCVESZPL4TE,Oh no ! next time watch out for that lol
+1,0.7,1,11,3YMTUJH0DTCN87SNHCYTCVESZPL4TE,They wont be cold i promise !
+1,0.7,1,12,3YMTUJH0DTCN87SNHCYTCVESZPL4TE,Im okay im just taking a mid life break right now and evaluating things
+1,0.7,0,13,3YMTUJH0DTCN87SNHCYTCVESZPL4TE,Sorry maybe we can keep searching for more tickets
+1,0.7,0,14,3YMTUJH0DTCN87SNHCYTCVESZPL4TE,Okay i will call you soon!
+1,0.7,1,15,3YMTUJH0DTCN87SNHCYTCVESZPL4TE,Its okay dont worry about it.  I hope that you find your wallet :(
+1,0.8,1,1,3X87C8JFV77TIC26Q90G5TJBTXAQSC,Uh-oh.  Would it be better if I just come straight home?
+1,0.8,1,2,3X87C8JFV77TIC26Q90G5TJBTXAQSC,Sorry.  I was in a rush to get to work.  It happens.
+1,0.8,1,3,3X87C8JFV77TIC26Q90G5TJBTXAQSC,What did the jerk do this time?
+1,0.8,1,4,3X87C8JFV77TIC26Q90G5TJBTXAQSC,I don't blame you.  It wasn't me though.
+1,0.8,1,5,3X87C8JFV77TIC26Q90G5TJBTXAQSC,Are you thinking of breaking up with him first?
+1,0.8,1,6,3X87C8JFV77TIC26Q90G5TJBTXAQSC,Hey no judgment here.
+1,0.8,1,7,3X87C8JFV77TIC26Q90G5TJBTXAQSC,Oh man.  I had no idea.  I am so sorry.  I bet you'll find something else quickly.
+1,0.8,0,8,3X87C8JFV77TIC26Q90G5TJBTXAQSC,"I guess I'll go with uber, so I can get there quicker.  I'm sorry.  I promise I'll make it up to you."
+1,0.8,0,9,3X87C8JFV77TIC26Q90G5TJBTXAQSC,Hey. What's up?
+1,0.8,1,10,3X87C8JFV77TIC26Q90G5TJBTXAQSC,Oh no!  That stinks!
+1,0.8,1,11,3X87C8JFV77TIC26Q90G5TJBTXAQSC,With that attitude you'll be lucky if I even give you any.
+1,0.8,0,12,3X87C8JFV77TIC26Q90G5TJBTXAQSC,"Yeah, I think I'm just a bit worn out from work."
+1,0.8,0,13,3X87C8JFV77TIC26Q90G5TJBTXAQSC,I know.  What do you think we should do?
+1,0.8,0,14,3X87C8JFV77TIC26Q90G5TJBTXAQSC,Ok.  I'll call you at 2.
+1,0.8,1,15,3X87C8JFV77TIC26Q90G5TJBTXAQSC,It stinks that you had to do that.
+1,0.9,1,1,38F5OAUN5O8UMLJBJGFB1OVEFW47HD,"Uh oh. What's going on? If you need help, I can come home instead."
+1,0.9,1,2,38F5OAUN5O8UMLJBJGFB1OVEFW47HD,"I'm sorry, it totally slipped my mind. I'll make sure to clean everything really well when I get back."
+1,0.9,1,3,38F5OAUN5O8UMLJBJGFB1OVEFW47HD,He's ridiculous! You need to starting looking for a new position!
+1,0.9,1,4,38F5OAUN5O8UMLJBJGFB1OVEFW47HD,I didn't say anything; I'm sorry dude. Maybe she saw pics?
+1,0.9,1,5,38F5OAUN5O8UMLJBJGFB1OVEFW47HD,"That's so horrible, you must be so upset. Want to get a drink tonight and talk?"
+1,0.9,1,6,38F5OAUN5O8UMLJBJGFB1OVEFW47HD,I won't judge! Well we should get a coffee sometime then lol
+1,0.9,1,7,38F5OAUN5O8UMLJBJGFB1OVEFW47HD,"Paula, I'm so sorry, I had no idea. If you want to talk, I'd be happy to get together."
+1,0.9,1,8,38F5OAUN5O8UMLJBJGFB1OVEFW47HD,Really sorry to be running late; I'll take an Uber so I get there faster. I'll make it up to you; promise!
+1,0.9,0,9,38F5OAUN5O8UMLJBJGFB1OVEFW47HD,Hey Jeremy--what's up? How can I help?
+1,0.9,1,10,38F5OAUN5O8UMLJBJGFB1OVEFW47HD,That sucks! Get thee to a hand dryer and godspeed :(
+1,0.9,0,11,38F5OAUN5O8UMLJBJGFB1OVEFW47HD,I'll bring extra sauce to make it up to you--sorry again and see you soon!
+1,0.9,0,12,38F5OAUN5O8UMLJBJGFB1OVEFW47HD,"I'm fine, just not up to being around people. Sorry for cancelling again, I know it's terrible."
+1,0.9,0,13,38F5OAUN5O8UMLJBJGFB1OVEFW47HD,"I know, I'm sorry. It was all they had left unfortunately."
+1,0.9,0,14,38F5OAUN5O8UMLJBJGFB1OVEFW47HD,Perfect! I'll ring you then.
+1,0.9,1,15,38F5OAUN5O8UMLJBJGFB1OVEFW47HD,Sorry this is happening to you! Let me know if there is anything else I can do to help.
+1,0.6,1,1,3U8YCDAGXQCTH3IUH7HWVNDSY5S0Q0,"Oh, then meet on park"
+1,0.6,0,2,3U8YCDAGXQCTH3IUH7HWVNDSY5S0Q0,"come on mom, How I control ants when I am here."
+1,0.6,1,3,3U8YCDAGXQCTH3IUH7HWVNDSY5S0Q0,Is your boss torturing you?
+1,0.6,0,4,3U8YCDAGXQCTH3IUH7HWVNDSY5S0Q0,"Oh, I am sorry dude, but this makes me laugh"
+1,0.6,1,5,3U8YCDAGXQCTH3IUH7HWVNDSY5S0Q0,Don't think about Dave anymore.
+1,0.6,1,6,3U8YCDAGXQCTH3IUH7HWVNDSY5S0Q0,It is okay
+1,0.6,1,7,3U8YCDAGXQCTH3IUH7HWVNDSY5S0Q0,What? why I lucky?
+1,0.6,0,8,3U8YCDAGXQCTH3IUH7HWVNDSY5S0Q0,K. bye
+1,0.6,0,9,3U8YCDAGXQCTH3IUH7HWVNDSY5S0Q0,What do you need from me jeremy?
+1,0.6,1,10,3U8YCDAGXQCTH3IUH7HWVNDSY5S0Q0,"Oh, Then what did you do?"
+1,0.6,1,11,3U8YCDAGXQCTH3IUH7HWVNDSY5S0Q0,Did you get angry for this small issue?
+1,0.6,1,12,3U8YCDAGXQCTH3IUH7HWVNDSY5S0Q0,"No Ruby, I am okay"
+1,0.6,1,13,3U8YCDAGXQCTH3IUH7HWVNDSY5S0Q0,What problem?
+1,0.6,0,14,3U8YCDAGXQCTH3IUH7HWVNDSY5S0Q0,Is that too important?
+1,0.6,1,15,3U8YCDAGXQCTH3IUH7HWVNDSY5S0Q0,Do you really lost your wallet?
+1,0.7,1,1,3ZSANO2JCG3WRNCXCTPMTUFXMVAFSG,Thanks for the warning!
+1,0.7,0,2,3ZSANO2JCG3WRNCXCTPMTUFXMVAFSG,I am so sorry mom. I will take care of it.
+1,0.7,1,3,3ZSANO2JCG3WRNCXCTPMTUFXMVAFSG,I'm sorry to hear it.
+1,0.7,1,4,3ZSANO2JCG3WRNCXCTPMTUFXMVAFSG,"It wasn't me, I swear!"
+1,0.7,1,5,3ZSANO2JCG3WRNCXCTPMTUFXMVAFSG,Break up with him first!
+1,0.7,1,6,3ZSANO2JCG3WRNCXCTPMTUFXMVAFSG,You are forgiven my child.
+1,0.7,1,7,3ZSANO2JCG3WRNCXCTPMTUFXMVAFSG,I am so sorry.
+1,0.7,0,8,3ZSANO2JCG3WRNCXCTPMTUFXMVAFSG,K. is not an answer.
+1,0.7,0,9,3ZSANO2JCG3WRNCXCTPMTUFXMVAFSG,I would be happy to help you.
+1,0.7,1,10,3ZSANO2JCG3WRNCXCTPMTUFXMVAFSG,I am so sorry to hear that!
+1,0.7,1,11,3ZSANO2JCG3WRNCXCTPMTUFXMVAFSG,I will hurry.
+1,0.7,1,12,3ZSANO2JCG3WRNCXCTPMTUFXMVAFSG,"I am sorry, I have a lot going on right now."
+1,0.7,0,13,3ZSANO2JCG3WRNCXCTPMTUFXMVAFSG,"I agree, what should we do?"
+1,0.7,0,14,3ZSANO2JCG3WRNCXCTPMTUFXMVAFSG,Great!
+1,0.7,1,15,3ZSANO2JCG3WRNCXCTPMTUFXMVAFSG,That is a good plan. I hope you find them.
+1,0.8,1,1,3WS1NTTKEZ8WQESL3R62JO9ER3J0F6,i'll help you clean it when i get home.
+1,0.8,1,2,3WS1NTTKEZ8WQESL3R62JO9ER3J0F6,"sorry mom, i'll take care of it"
+1,0.8,1,3,3WS1NTTKEZ8WQESL3R62JO9ER3J0F6,just be courteous and don't get fired
+1,0.8,1,4,3WS1NTTKEZ8WQESL3R62JO9ER3J0F6,Why would anyone tell her and who else did she tell?
+1,0.8,1,5,3WS1NTTKEZ8WQESL3R62JO9ER3J0F6,He is a moron and doesn't deserve you.
+1,0.8,1,6,3WS1NTTKEZ8WQESL3R62JO9ER3J0F6,"god forgives, i don't"
+1,0.8,1,7,3WS1NTTKEZ8WQESL3R62JO9ER3J0F6,I'm sorry to hear that. You definitely did not deserve to get laid off.
+1,0.8,0,8,3WS1NTTKEZ8WQESL3R62JO9ER3J0F6,Why are you texting me like that?
+1,0.8,0,9,3WS1NTTKEZ8WQESL3R62JO9ER3J0F6,What's up Jeremy?
+1,0.8,1,10,3WS1NTTKEZ8WQESL3R62JO9ER3J0F6,do you want me to bring you clean clothes?
+1,0.8,1,11,3WS1NTTKEZ8WQESL3R62JO9ER3J0F6,Relax bro or else i'm gonna eat your food :o
+1,0.8,0,12,3WS1NTTKEZ8WQESL3R62JO9ER3J0F6,"i'm just in a funk right now, i cant really explain it"
+1,0.8,0,13,3WS1NTTKEZ8WQESL3R62JO9ER3J0F6,"I agree, what should we do?"
+1,0.8,0,14,3WS1NTTKEZ8WQESL3R62JO9ER3J0F6,Thanks (:
+1,0.8,1,15,3WS1NTTKEZ8WQESL3R62JO9ER3J0F6,"good idea, i'll help you look as well"
+1,0.9,1,1,3FE7TXL1LJJ0DDL8WULAEB67V3C2QM,Do you want me to just come home instead of going for drinks?
+1,0.9,1,2,3FE7TXL1LJJ0DDL8WULAEB67V3C2QM,I'm sorry. I won't let this happen again.
+1,0.9,1,3,3FE7TXL1LJJ0DDL8WULAEB67V3C2QM,Don't let him get to you. Just keep your emotions under control.
+1,0.9,1,4,3FE7TXL1LJJ0DDL8WULAEB67V3C2QM,"I'm sorry, but it wasn't me."
+1,0.9,1,5,3FE7TXL1LJJ0DDL8WULAEB67V3C2QM,It's ok. You'll find someone else then you wont even have to worry about it.
+1,0.9,1,6,3FE7TXL1LJJ0DDL8WULAEB67V3C2QM,I wasn't saying any of this to upset you.
+1,0.9,1,7,3FE7TXL1LJJ0DDL8WULAEB67V3C2QM,I'm glad too. Don't sweat it though.
+1,0.9,1,8,3FE7TXL1LJJ0DDL8WULAEB67V3C2QM,Are you upset with me?
+1,0.9,0,9,3FE7TXL1LJJ0DDL8WULAEB67V3C2QM,"Seriously, are you just going to ignore me?"
+1,0.9,1,10,3FE7TXL1LJJ0DDL8WULAEB67V3C2QM,Go home and change clothes. You'll be okay.
+1,0.9,0,11,3FE7TXL1LJJ0DDL8WULAEB67V3C2QM,I'm sitting on them so they'll be warm LOL
+1,0.9,0,12,3FE7TXL1LJJ0DDL8WULAEB67V3C2QM,I'm fine. I'm just not up for it right now.
+1,0.9,0,13,3FE7TXL1LJJ0DDL8WULAEB67V3C2QM,Then what are we going to do? Do you have another way to get tickets?
+1,0.9,0,14,3FE7TXL1LJJ0DDL8WULAEB67V3C2QM,"Ok, cool. I'll call you then."
+1,0.9,1,15,3FE7TXL1LJJ0DDL8WULAEB67V3C2QM,Are you upset with me about this?
+1,0.6,1,1,3P59JYT76MGD5TD0DYF5JGHUFAB2T0,"no worries, probably no worse than my place"
+1,0.6,0,2,3P59JYT76MGD5TD0DYF5JGHUFAB2T0,sorry mom I got so busy and it completely slipped my mind
+1,0.6,1,3,3P59JYT76MGD5TD0DYF5JGHUFAB2T0,bosses can be stupid. hang in there!
+1,0.6,0,4,3P59JYT76MGD5TD0DYF5JGHUFAB2T0,I wonder who it was
+1,0.6,1,5,3P59JYT76MGD5TD0DYF5JGHUFAB2T0,that sucks but if he was going to do it on that day he's probably a crappy guy and you deserve better
+1,0.6,1,6,3P59JYT76MGD5TD0DYF5JGHUFAB2T0,lol can you drink tea on that diet? maybe try that instead
+1,0.6,1,7,3P59JYT76MGD5TD0DYF5JGHUFAB2T0,wow Paula I'm so sorry that sucks...
+1,0.6,0,8,3P59JYT76MGD5TD0DYF5JGHUFAB2T0,um...k...
+1,0.6,0,9,3P59JYT76MGD5TD0DYF5JGHUFAB2T0,yeah what's up?
+1,0.6,1,10,3P59JYT76MGD5TD0DYF5JGHUFAB2T0,oh man that sucks!
+1,0.6,1,11,3P59JYT76MGD5TD0DYF5JGHUFAB2T0,shut up before I eat them all haha
+1,0.6,1,12,3P59JYT76MGD5TD0DYF5JGHUFAB2T0,not really. everything sucks right now...
+1,0.6,1,13,3P59JYT76MGD5TD0DYF5JGHUFAB2T0,well what should I do? that's all I could get
+1,0.6,0,14,3P59JYT76MGD5TD0DYF5JGHUFAB2T0,cool I'll call then
+1,0.6,1,15,3P59JYT76MGD5TD0DYF5JGHUFAB2T0,hopefully someone turns it in soon. have you retraced your steps from the last time you had it?
+1,0.7,1,1,32UTUBMZ7HSM6YHL1M8VLR8J613VBA,"omg, forget drinks, i'll be home to help soon"
+1,0.7,0,2,32UTUBMZ7HSM6YHL1M8VLR8J613VBA,"Sorry, I'll clean them up asap"
+1,0.7,1,3,32UTUBMZ7HSM6YHL1M8VLR8J613VBA,"you should be looking, can't hurt to have options"
+1,0.7,1,4,32UTUBMZ7HSM6YHL1M8VLR8J613VBA,"don't blame you, wasn't me man..."
+1,0.7,1,5,32UTUBMZ7HSM6YHL1M8VLR8J613VBA,leave him
+1,0.7,1,6,32UTUBMZ7HSM6YHL1M8VLR8J613VBA,all is forgiven :)
+1,0.7,1,7,32UTUBMZ7HSM6YHL1M8VLR8J613VBA,"no way, that sucks so bad.  i'm sooooo sorry"
+1,0.7,0,8,32UTUBMZ7HSM6YHL1M8VLR8J613VBA,"i'll hurry, see ya soon"
+1,0.7,0,9,32UTUBMZ7HSM6YHL1M8VLR8J613VBA,"sorry, what's up?"
+1,0.7,1,10,32UTUBMZ7HSM6YHL1M8VLR8J613VBA,that SUCKS
+1,0.7,1,11,32UTUBMZ7HSM6YHL1M8VLR8J613VBA,first world problems...
+1,0.7,1,12,32UTUBMZ7HSM6YHL1M8VLR8J613VBA,"I'm ok, just not up for going out.  call me later"
+1,0.7,0,13,32UTUBMZ7HSM6YHL1M8VLR8J613VBA,"i know, didn't know what to do though"
+1,0.7,0,14,32UTUBMZ7HSM6YHL1M8VLR8J613VBA,talk to you then
+1,0.7,1,15,32UTUBMZ7HSM6YHL1M8VLR8J613VBA,"Good thinking, that sucks though"
+1,0.8,1,1,3EFE17QCRD1G5J337JDMWFRA2AESHI,Are you okay?
+1,0.8,1,2,3EFE17QCRD1G5J337JDMWFRA2AESHI,Sorry I'll take it out later.
+1,0.8,1,3,3EFE17QCRD1G5J337JDMWFRA2AESHI,He's such as jerk.
+1,0.8,1,4,3EFE17QCRD1G5J337JDMWFRA2AESHI,I didn't tell her.
+1,0.8,1,5,3EFE17QCRD1G5J337JDMWFRA2AESHI,That's really rude of him to do that.
+1,0.8,1,6,3EFE17QCRD1G5J337JDMWFRA2AESHI,Lmao it's okay.
+1,0.8,1,7,3EFE17QCRD1G5J337JDMWFRA2AESHI,I'm so sorry.
+1,0.8,0,8,3EFE17QCRD1G5J337JDMWFRA2AESHI,Which one?
+1,0.8,0,9,3EFE17QCRD1G5J337JDMWFRA2AESHI,What is it?
+1,0.8,1,10,3EFE17QCRD1G5J337JDMWFRA2AESHI,Wow that's so rude of them.
+1,0.8,1,11,3EFE17QCRD1G5J337JDMWFRA2AESHI,I'll make super sure they're cold once I get there.
+1,0.8,0,12,3EFE17QCRD1G5J337JDMWFRA2AESHI,Not really.
+1,0.8,0,13,3EFE17QCRD1G5J337JDMWFRA2AESHI,"Yeah, I tried looking at other websites but I couldn't find anything."
+1,0.8,0,14,3EFE17QCRD1G5J337JDMWFRA2AESHI,"Alright, I'll call you later then."
+1,0.8,1,15,3EFE17QCRD1G5J337JDMWFRA2AESHI,"Aw dang, I hope you find it soon."
+1,0.9,1,1,3J4Q2Z4UTZZMPTJFAEAH2IMWZA6QWR,"As long as there's room to sit, I think it'll be alright."
+1,0.9,1,2,3J4Q2Z4UTZZMPTJFAEAH2IMWZA6QWR,"Forgetfulness is a trait, its not something you raised."
+1,0.9,1,3,3J4Q2Z4UTZZMPTJFAEAH2IMWZA6QWR,"You keep your job for money, obviously.  If you aren't worried about your job, grind it back.  Tell him how you feel, or take it up to the person above him."
+1,0.9,1,4,3J4Q2Z4UTZZMPTJFAEAH2IMWZA6QWR,Maybe ask her where she found out.
+1,0.9,1,5,3J4Q2Z4UTZZMPTJFAEAH2IMWZA6QWR,"Go talk to him.  If that's what he wants, there's no sense in waiting until valentines to do it."
+1,0.9,1,6,3J4Q2Z4UTZZMPTJFAEAH2IMWZA6QWR,"Its not me who has to forgive them, if you give up you only have yourself to blame."
+1,0.9,1,7,3J4Q2Z4UTZZMPTJFAEAH2IMWZA6QWR,"I don't know yet, I haven't gone to work today nor have I received a call."
+1,0.9,1,8,3J4Q2Z4UTZZMPTJFAEAH2IMWZA6QWR,"Don't be a bitch, Sarah."
+1,0.9,0,9,3J4Q2Z4UTZZMPTJFAEAH2IMWZA6QWR,Help with what?
+1,0.9,1,10,3J4Q2Z4UTZZMPTJFAEAH2IMWZA6QWR,I don't think an umbrella would've saved you there.
+1,0.9,0,11,3J4Q2Z4UTZZMPTJFAEAH2IMWZA6QWR,Better cold than me eating them before I get there if this takes any longer.
+1,0.9,0,12,3J4Q2Z4UTZZMPTJFAEAH2IMWZA6QWR,"I'm fine, I like to keep to myself."
+1,0.9,0,13,3J4Q2Z4UTZZMPTJFAEAH2IMWZA6QWR,What do you want to do about it?  I can probably pass if we can't find a third.
+1,0.9,0,14,3J4Q2Z4UTZZMPTJFAEAH2IMWZA6QWR,"Alright, I'll call you in a bit."
+1,0.9,1,15,3J4Q2Z4UTZZMPTJFAEAH2IMWZA6QWR,"I said not to worry about it, whether you have credit cards doesn't matter.  Just find your wallet."
+1,0.6,1,1,3HQUKB7LNGARFAPNWP1NS1K8TZ2HHR,"Uh oh, ok. Thanks for the warning. Would you prefer that I came home right after work?"
+1,0.6,0,2,3HQUKB7LNGARFAPNWP1NS1K8TZ2HHR,I'm sorry. I totally forgot. I'll be home in a few minutes and take care of it.
+1,0.6,1,3,3HQUKB7LNGARFAPNWP1NS1K8TZ2HHR,That really stinks. You should really consider trying to find a new job. It's not worth it to be stressed out like that all the time.
+1,0.6,0,4,3HQUKB7LNGARFAPNWP1NS1K8TZ2HHR,I don't blame you. She'll get over it though. You should take her out to dinner to make up for it and talk it over with her.
+1,0.6,1,5,3HQUKB7LNGARFAPNWP1NS1K8TZ2HHR,You should break up with the jerk first. How did you find out?
+1,0.6,1,6,3HQUKB7LNGARFAPNWP1NS1K8TZ2HHR,It's ok. I completely understand how difficult that might be. Don't give up though.
+1,0.6,1,7,3HQUKB7LNGARFAPNWP1NS1K8TZ2HHR,Oh my gosh! I'm so sorry. What are you going to do now?
+1,0.6,0,8,3HQUKB7LNGARFAPNWP1NS1K8TZ2HHR,"K? Uber or bus to you think? Uber would probably be faster, don't you think?"
+1,0.6,0,9,3HQUKB7LNGARFAPNWP1NS1K8TZ2HHR,I'm here. What's wrong Jeremy? Are you ok?
+1,0.6,1,10,3HQUKB7LNGARFAPNWP1NS1K8TZ2HHR,Yikes! I'm sorry that happened. Do you need me to bring you dry clothes?
+1,0.6,1,11,3HQUKB7LNGARFAPNWP1NS1K8TZ2HHR,"I know, right!? Cold chicken nugget are the worst. I'll come straight home after getting them so hopefully they will still be warm."
+1,0.6,1,12,3HQUKB7LNGARFAPNWP1NS1K8TZ2HHR,I'm ok. Work has just been really stressful for the past few weeks and by the time I get home I'm tired and don't want to do anything but relax.
+1,0.6,1,13,3HQUKB7LNGARFAPNWP1NS1K8TZ2HHR,I'm really sorry. I tried but that is all they had available. Do you not want to go now?
+1,0.6,0,14,3HQUKB7LNGARFAPNWP1NS1K8TZ2HHR,"Ok, I'll call you at 2. Stay near your phone."
+1,0.6,1,15,3HQUKB7LNGARFAPNWP1NS1K8TZ2HHR,That is such a hassle. I hope you end of finding it. Was your driver's license in your wallet too?
+1,0.7,1,1,3SKEMFQBZ41POPP2Z6AESG71IXC8K3,C'mon don't be like that
+1,0.7,0,2,3SKEMFQBZ41POPP2Z6AESG71IXC8K3,It's not a big deal
+1,0.7,1,3,3SKEMFQBZ41POPP2Z6AESG71IXC8K3,That seems tough
+1,0.7,1,4,3SKEMFQBZ41POPP2Z6AESG71IXC8K3,"I didn't, no idea who did"
+1,0.7,1,5,3SKEMFQBZ41POPP2Z6AESG71IXC8K3,You should break up with him
+1,0.7,1,6,3SKEMFQBZ41POPP2Z6AESG71IXC8K3,Haha it's alright
+1,0.7,1,7,3SKEMFQBZ41POPP2Z6AESG71IXC8K3,I'm so sorry to hear that
+1,0.7,0,8,3SKEMFQBZ41POPP2Z6AESG71IXC8K3,That's not an answer
+1,0.7,0,9,3SKEMFQBZ41POPP2Z6AESG71IXC8K3,"Sure, what's going on?"
+1,0.7,1,10,3SKEMFQBZ41POPP2Z6AESG71IXC8K3,Like in the movies? that's funny
+1,0.7,1,11,3SKEMFQBZ41POPP2Z6AESG71IXC8K3,They won't.. I hope
+1,0.7,1,12,3SKEMFQBZ41POPP2Z6AESG71IXC8K3,Maybe we can talk later
+1,0.7,0,13,3SKEMFQBZ41POPP2Z6AESG71IXC8K3,Got any idea?
+1,0.7,0,14,3SKEMFQBZ41POPP2Z6AESG71IXC8K3,I'll call you then
+1,0.7,1,15,3SKEMFQBZ41POPP2Z6AESG71IXC8K3,"That's good, I hope you find it tho"
+1,0.8,1,1,336KAV9KYRO9MFCUN424RX99UCT2YP,So I should just come home?...
+1,0.8,1,2,336KAV9KYRO9MFCUN424RX99UCT2YP,I'm so sorry Mom. I'll be sure to take it out next time
+1,0.8,1,3,336KAV9KYRO9MFCUN424RX99UCT2YP,Want to grab a drink after your shift to chill out?
+1,0.8,1,4,336KAV9KYRO9MFCUN424RX99UCT2YP,Dude it wasn't me... I hope she gets over it quickly
+1,0.8,1,5,336KAV9KYRO9MFCUN424RX99UCT2YP,I would just break it off before he does
+1,0.8,1,6,336KAV9KYRO9MFCUN424RX99UCT2YP,Your sins are absolved... as long as there's a venti latte for me
+1,0.8,1,7,336KAV9KYRO9MFCUN424RX99UCT2YP,I'm so sorry. let me know if you need anything
+1,0.8,0,8,336KAV9KYRO9MFCUN424RX99UCT2YP,I'm sorry! I'll get there as soon as I can.
+1,0.8,0,9,336KAV9KYRO9MFCUN424RX99UCT2YP,Sorry man I was busy. what's up
+1,0.8,1,10,336KAV9KYRO9MFCUN424RX99UCT2YP,Ugh that sucks. Do you need me to bring a change of clothes for you??
+1,0.8,1,11,336KAV9KYRO9MFCUN424RX99UCT2YP,you got it man
+1,0.8,0,12,336KAV9KYRO9MFCUN424RX99UCT2YP,Meh. I just don't feel like myself.
+1,0.8,0,13,336KAV9KYRO9MFCUN424RX99UCT2YP,Maybe we will be able to find a ticket at the door
+1,0.8,0,14,336KAV9KYRO9MFCUN424RX99UCT2YP,"Ok sounds good, talk to ya at 2pm"
+1,0.8,1,15,336KAV9KYRO9MFCUN424RX99UCT2YP,That was smart. Hopefully it turns up
+1,0.9,1,1,3A1COHJ8NKRYMZOUTL7HFOR9QGAH8A,Lol ok.
+1,0.9,1,2,3A1COHJ8NKRYMZOUTL7HFOR9QGAH8A,I'm sorry!
+1,0.9,1,3,3A1COHJ8NKRYMZOUTL7HFOR9QGAH8A,"Aw, sorry :("
+1,0.9,1,4,3A1COHJ8NKRYMZOUTL7HFOR9QGAH8A,I didn't tell her.
+1,0.9,1,5,3A1COHJ8NKRYMZOUTL7HFOR9QGAH8A,"Yeah, that's terrible!"
+1,0.9,1,6,3A1COHJ8NKRYMZOUTL7HFOR9QGAH8A,"Lol, okay."
+1,0.9,1,7,3A1COHJ8NKRYMZOUTL7HFOR9QGAH8A,"Aw, I'm sorry!"
+1,0.9,1,8,3A1COHJ8NKRYMZOUTL7HFOR9QGAH8A,I'll be there soon.
+1,0.9,0,9,3A1COHJ8NKRYMZOUTL7HFOR9QGAH8A,"Sorry, what's up?"
+1,0.9,1,10,3A1COHJ8NKRYMZOUTL7HFOR9QGAH8A,Sorry that happened to you!
+1,0.9,0,11,3A1COHJ8NKRYMZOUTL7HFOR9QGAH8A,I'm on the way.
+1,0.9,0,12,3A1COHJ8NKRYMZOUTL7HFOR9QGAH8A,I don't know.
+1,0.9,0,13,3A1COHJ8NKRYMZOUTL7HFOR9QGAH8A,I'm sorry.
+1,0.9,0,14,3A1COHJ8NKRYMZOUTL7HFOR9QGAH8A,"Okay, talk to you soon."
+1,0.9,1,15,3A1COHJ8NKRYMZOUTL7HFOR9QGAH8A,I can check around here.
+1,0.6,1,1,3ZDAD0O1T29E69GX1N0Y96BQSJBXT5,That's nothing new.
+1,0.6,0,2,3ZDAD0O1T29E69GX1N0Y96BQSJBXT5,I don't think the ants are there because I forgot the trash one day. You should keep your house cleaner.
+1,0.6,1,3,3ZDAD0O1T29E69GX1N0Y96BQSJBXT5,Is he unfair?
+1,0.6,0,4,3ZDAD0O1T29E69GX1N0Y96BQSJBXT5,Looks like we've got a narc hanging around.
+1,0.6,1,5,3ZDAD0O1T29E69GX1N0Y96BQSJBXT5,Cut him off. Throw all his stuff away if there's any around. Block him on everything.
+1,0.6,1,6,3ZDAD0O1T29E69GX1N0Y96BQSJBXT5,"Haha, well we've all got our vices."
+1,0.6,1,7,3ZDAD0O1T29E69GX1N0Y96BQSJBXT5,"Oh my gosh, no! Did they tell you why?"
+1,0.6,0,8,3ZDAD0O1T29E69GX1N0Y96BQSJBXT5,"Ooh, that stings. I'll make it up to you, I promise."
+1,0.6,0,9,3ZDAD0O1T29E69GX1N0Y96BQSJBXT5,"Watcha need, bud?"
+1,0.6,1,10,3ZDAD0O1T29E69GX1N0Y96BQSJBXT5,"Oh no! That's like something you see in movies, haha."
+1,0.6,1,11,3ZDAD0O1T29E69GX1N0Y96BQSJBXT5,"That's not really up to me, but I'll do my best."
+1,0.6,1,12,3ZDAD0O1T29E69GX1N0Y96BQSJBXT5,You can tell me.
+1,0.6,1,13,3ZDAD0O1T29E69GX1N0Y96BQSJBXT5,"Not really. Have fun staying at home, bud."
+1,0.6,0,14,3ZDAD0O1T29E69GX1N0Y96BQSJBXT5,"Okay cool, I'll let you know when I'm free."
+1,0.6,1,15,3ZDAD0O1T29E69GX1N0Y96BQSJBXT5,"That's a good idea, always a hassle though."
+1,0.7,1,1,3KGTPGBS6YHS56SPD35FOC3WYOI2UR,What are you doing now.
+1,0.7,0,2,3KGTPGBS6YHS56SPD35FOC3WYOI2UR,I am really sorry.
+1,0.7,1,3,3KGTPGBS6YHS56SPD35FOC3WYOI2UR,Thanks.
+1,0.7,1,4,3KGTPGBS6YHS56SPD35FOC3WYOI2UR,I can't believe.
+1,0.7,1,5,3KGTPGBS6YHS56SPD35FOC3WYOI2UR,Again go to Dave and tell some emotional word.
+1,0.7,1,6,3KGTPGBS6YHS56SPD35FOC3WYOI2UR,Okay.
+1,0.7,1,7,3KGTPGBS6YHS56SPD35FOC3WYOI2UR,Sure. You are right.
+1,0.7,0,8,3KGTPGBS6YHS56SPD35FOC3WYOI2UR,I will wait for you.
+1,0.7,0,9,3KGTPGBS6YHS56SPD35FOC3WYOI2UR,Yes. Sure.
+1,0.7,1,10,3KGTPGBS6YHS56SPD35FOC3WYOI2UR,Ho no. Are you sure.
+1,0.7,1,11,3KGTPGBS6YHS56SPD35FOC3WYOI2UR,Thanks.
+1,0.7,1,12,3KGTPGBS6YHS56SPD35FOC3WYOI2UR,No.
+1,0.7,0,13,3KGTPGBS6YHS56SPD35FOC3WYOI2UR,Yes this is a problem.
+1,0.7,0,14,3KGTPGBS6YHS56SPD35FOC3WYOI2UR,Thanks.
+1,0.7,1,15,3KGTPGBS6YHS56SPD35FOC3WYOI2UR,Don't do this.
+1,0.8,1,1,3G5F9DBFOQTWXBK71EIR72BH1E8HVC,"If I need to come home instead, just let me know."
+1,0.8,1,2,3G5F9DBFOQTWXBK71EIR72BH1E8HVC,I'm really sorry. I'll take care of it when I get back
+1,0.8,1,3,3G5F9DBFOQTWXBK71EIR72BH1E8HVC,I know how you feel
+1,0.8,1,4,3G5F9DBFOQTWXBK71EIR72BH1E8HVC,"Wow, that's too bad. It sure wasn't me though"
+1,0.8,1,5,3G5F9DBFOQTWXBK71EIR72BH1E8HVC,That's horrible. I'm here if you need to talk at any point
+1,0.8,1,6,3G5F9DBFOQTWXBK71EIR72BH1E8HVC,It'll be our secret :)
+1,0.8,1,7,3G5F9DBFOQTWXBK71EIR72BH1E8HVC,"Oh wow, I'm so sorry. Are you okay?"
+1,0.8,0,8,3G5F9DBFOQTWXBK71EIR72BH1E8HVC,Ok... I'll figure it out on my own :)
+1,0.8,0,9,3G5F9DBFOQTWXBK71EIR72BH1E8HVC,"Sorry, I was busy. How can I help?"
+1,0.8,1,10,3G5F9DBFOQTWXBK71EIR72BH1E8HVC,What a jerk.
+1,0.8,1,11,3G5F9DBFOQTWXBK71EIR72BH1E8HVC,"Don't worry, they won't be"
+1,0.8,0,12,3G5F9DBFOQTWXBK71EIR72BH1E8HVC,"Yeah, I'm fine. I just have been anti-social recently."
+1,0.8,0,13,3G5F9DBFOQTWXBK71EIR72BH1E8HVC,Yeah. We'll figure something out
+1,0.8,0,14,3G5F9DBFOQTWXBK71EIR72BH1E8HVC,"Okay, talk to you then"
+1,0.8,1,15,3G5F9DBFOQTWXBK71EIR72BH1E8HVC,Better safe than sorry
+1,0.9,1,1,3ZY8KE4ISKZ9A4JAK45LGG3IS14QVH,What can I do to help?
+1,0.9,1,2,3ZY8KE4ISKZ9A4JAK45LGG3IS14QVH,"Sorry mom, I'll try to remember next time."
+1,0.9,1,3,3ZY8KE4ISKZ9A4JAK45LGG3IS14QVH,Time for job hunting!
+1,0.9,1,4,3ZY8KE4ISKZ9A4JAK45LGG3IS14QVH,"Sorry dude, wasn't me."
+1,0.9,1,5,3ZY8KE4ISKZ9A4JAK45LGG3IS14QVH,Beat him to the punch and break up with him first?!
+1,0.9,1,6,3ZY8KE4ISKZ9A4JAK45LGG3IS14QVH,No judgement here!  I could never even think of giving up coffee.
+1,0.9,1,7,3ZY8KE4ISKZ9A4JAK45LGG3IS14QVH,I'm so sorry to hear that.  How can I help?
+1,0.9,1,8,3ZY8KE4ISKZ9A4JAK45LGG3IS14QVH,I'll take an Uber and get there asap.  Sorry about this!
+1,0.9,0,9,3ZY8KE4ISKZ9A4JAK45LGG3IS14QVH,What do you need help with?
+1,0.9,1,10,3ZY8KE4ISKZ9A4JAK45LGG3IS14QVH,"Yikes, sorry that happened to you!"
+1,0.9,0,11,3ZY8KE4ISKZ9A4JAK45LGG3IS14QVH,Right?  First world problems...=)
+1,0.9,0,12,3ZY8KE4ISKZ9A4JAK45LGG3IS14QVH,"Yeah, sorry, just working through some stuff."
+1,0.9,0,13,3ZY8KE4ISKZ9A4JAK45LGG3IS14QVH,I know.  Can we talk about this in person?
+1,0.9,0,14,3ZY8KE4ISKZ9A4JAK45LGG3IS14QVH,"Ok, talk soon."
+1,0.9,1,15,3ZY8KE4ISKZ9A4JAK45LGG3IS14QVH,Good idea - can't be too careful these days!
+1,0.6,1,1,3HSYG7LRBKU9JQR38V7HILGSDXDKK5,Should I cancel drinks?
+1,0.6,0,2,3HSYG7LRBKU9JQR38V7HILGSDXDKK5,I totally forgot.
+1,0.6,1,3,3HSYG7LRBKU9JQR38V7HILGSDXDKK5,Ugh. I can't believe him!
+1,0.6,0,4,3HSYG7LRBKU9JQR38V7HILGSDXDKK5,That sucks. Wasn't me.
+1,0.6,1,5,3HSYG7LRBKU9JQR38V7HILGSDXDKK5,He doesn't deserve you.
+1,0.6,1,6,3HSYG7LRBKU9JQR38V7HILGSDXDKK5,"It's ok, I wasn't judging!"
+1,0.6,1,7,3HSYG7LRBKU9JQR38V7HILGSDXDKK5,OMG! I am so sorry!
+1,0.6,0,8,3HSYG7LRBKU9JQR38V7HILGSDXDKK5,I'll uber and get there as quickly as I can.
+1,0.6,0,9,3HSYG7LRBKU9JQR38V7HILGSDXDKK5,Sorry. I was in the shower.
+1,0.6,1,10,3HSYG7LRBKU9JQR38V7HILGSDXDKK5,"Oh, poor you!"
+1,0.6,1,11,3HSYG7LRBKU9JQR38V7HILGSDXDKK5,I'll try to be fast.
+1,0.6,1,12,3HSYG7LRBKU9JQR38V7HILGSDXDKK5,"I'm sorry, I'm having a rough time."
+1,0.6,1,13,3HSYG7LRBKU9JQR38V7HILGSDXDKK5,I know! What do we do?
+1,0.6,0,14,3HSYG7LRBKU9JQR38V7HILGSDXDKK5,Cool. I'll talk to you then.
+1,0.6,1,15,3HSYG7LRBKU9JQR38V7HILGSDXDKK5,"Oh, I'm sorry, that's a drag."
+1,0.7,1,1,3ZPBJO59KQXA3UKLATIX1G5A17DDHI,What's going on?
+1,0.7,0,2,3ZPBJO59KQXA3UKLATIX1G5A17DDHI,"I'm sorry, I'll take care of it"
+1,0.7,1,3,3ZPBJO59KQXA3UKLATIX1G5A17DDHI,You should start looking for a better job
+1,0.7,1,4,3ZPBJO59KQXA3UKLATIX1G5A17DDHI,Well it wasn't me
+1,0.7,1,5,3ZPBJO59KQXA3UKLATIX1G5A17DDHI,Screw him
+1,0.7,1,6,3ZPBJO59KQXA3UKLATIX1G5A17DDHI,what'd you get from starbucks?
+1,0.7,1,7,3ZPBJO59KQXA3UKLATIX1G5A17DDHI,I'm so sorry :(
+1,0.7,0,8,3ZPBJO59KQXA3UKLATIX1G5A17DDHI,What's wrong?
+1,0.7,0,9,3ZPBJO59KQXA3UKLATIX1G5A17DDHI,What's wrong?
+1,0.7,1,10,3ZPBJO59KQXA3UKLATIX1G5A17DDHI,Typical :(
+1,0.7,1,11,3ZPBJO59KQXA3UKLATIX1G5A17DDHI,Lol I'll try to be quick
+1,0.7,1,12,3ZPBJO59KQXA3UKLATIX1G5A17DDHI,Don't really want to talk about it
+1,0.7,0,13,3ZPBJO59KQXA3UKLATIX1G5A17DDHI,"Yeah, what should we do"
+1,0.7,0,14,3ZPBJO59KQXA3UKLATIX1G5A17DDHI,Talk to you then
+1,0.7,1,15,3ZPBJO59KQXA3UKLATIX1G5A17DDHI,Good
+1,0.8,1,1,3TAYZSBPLM4CQT0LOYAF9BL8DRX2SB,That's okay.
+1,0.8,1,2,3TAYZSBPLM4CQT0LOYAF9BL8DRX2SB,Sorry about that.
+1,0.8,1,3,3TAYZSBPLM4CQT0LOYAF9BL8DRX2SB,You should quit your job.
+1,0.8,1,4,3TAYZSBPLM4CQT0LOYAF9BL8DRX2SB,You need to calm down.
+1,0.8,1,5,3TAYZSBPLM4CQT0LOYAF9BL8DRX2SB,Just don't talk to him.
+1,0.8,1,6,3TAYZSBPLM4CQT0LOYAF9BL8DRX2SB,That's okay.
+1,0.8,1,7,3TAYZSBPLM4CQT0LOYAF9BL8DRX2SB,I'm sorry what happened to you.
+1,0.8,0,8,3TAYZSBPLM4CQT0LOYAF9BL8DRX2SB,Are you okay?
+1,0.8,0,9,3TAYZSBPLM4CQT0LOYAF9BL8DRX2SB,What do you need?
+1,0.8,1,10,3TAYZSBPLM4CQT0LOYAF9BL8DRX2SB,Im sorry that happened to you.
+1,0.8,1,11,3TAYZSBPLM4CQT0LOYAF9BL8DRX2SB,Sorry about the wait.
+1,0.8,0,12,3TAYZSBPLM4CQT0LOYAF9BL8DRX2SB,"Yes, I am okay."
+1,0.8,0,13,3TAYZSBPLM4CQT0LOYAF9BL8DRX2SB,"I agree, we need to figure out something."
+1,0.8,0,14,3TAYZSBPLM4CQT0LOYAF9BL8DRX2SB,Thank you for understanding.
+1,0.8,1,15,3TAYZSBPLM4CQT0LOYAF9BL8DRX2SB,Cancel it now so you won't forget.
+1,0.9,1,1,3WYGZ5XF3XB7794BD4GJ9772URISKM,"that bad, what happened?"
+1,0.9,1,2,3WYGZ5XF3XB7794BD4GJ9772URISKM,"I'm so sorry, I just got so busy with stuff that I totally forgot."
+1,0.9,1,3,3WYGZ5XF3XB7794BD4GJ9772URISKM,what a piece of work
+1,0.9,1,4,3WYGZ5XF3XB7794BD4GJ9772URISKM,"sorry man, I sure didn't tell her."
+1,0.9,1,5,3WYGZ5XF3XB7794BD4GJ9772URISKM,you should totally dump that loser.
+1,0.9,1,6,3WYGZ5XF3XB7794BD4GJ9772URISKM,"Chill girl, I was just asking."
+1,0.9,1,7,3WYGZ5XF3XB7794BD4GJ9772URISKM,"sorry, that's totally unfair to you."
+1,0.9,1,8,3WYGZ5XF3XB7794BD4GJ9772URISKM,"sorry for the delay, I'm taking the uber and will be there shortly."
+1,0.9,0,9,3WYGZ5XF3XB7794BD4GJ9772URISKM,"sure, what do you need?"
+1,0.9,1,10,3WYGZ5XF3XB7794BD4GJ9772URISKM,"damn, that is bad"
+1,0.9,0,11,3WYGZ5XF3XB7794BD4GJ9772URISKM,"they wouldn't,  see you in 5"
+1,0.9,0,12,3WYGZ5XF3XB7794BD4GJ9772URISKM,"Yeah, I am fine. just not in the mood."
+1,0.9,0,13,3WYGZ5XF3XB7794BD4GJ9772URISKM,"Yeah, I know. What can we do?"
+1,0.9,0,14,3WYGZ5XF3XB7794BD4GJ9772URISKM,"All right, will call at 2pm"
+1,0.9,1,15,3WYGZ5XF3XB7794BD4GJ9772URISKM,That's bad. anything I can do to help?
+1,0.6,1,1,39JEC7537VX5G39RFM4QWBE1OM3VCH,why?
+1,0.6,0,2,39JEC7537VX5G39RFM4QWBE1OM3VCH,Sorry about that!
+1,0.6,1,3,39JEC7537VX5G39RFM4QWBE1OM3VCH,oh yea
+1,0.6,0,4,39JEC7537VX5G39RFM4QWBE1OM3VCH,wonder who told her
+1,0.6,1,5,39JEC7537VX5G39RFM4QWBE1OM3VCH,dang that sucks
+1,0.6,1,6,39JEC7537VX5G39RFM4QWBE1OM3VCH,lol what
+1,0.6,1,7,39JEC7537VX5G39RFM4QWBE1OM3VCH,lucky you
+1,0.6,0,8,39JEC7537VX5G39RFM4QWBE1OM3VCH,prob the bus
+1,0.6,0,9,39JEC7537VX5G39RFM4QWBE1OM3VCH,whats wrong?
+1,0.6,1,10,39JEC7537VX5G39RFM4QWBE1OM3VCH,dang thats bad
+1,0.6,1,11,39JEC7537VX5G39RFM4QWBE1OM3VCH,relax man
+1,0.6,1,12,39JEC7537VX5G39RFM4QWBE1OM3VCH,yes im okay
+1,0.6,1,13,39JEC7537VX5G39RFM4QWBE1OM3VCH,why is that?
+1,0.6,0,14,39JEC7537VX5G39RFM4QWBE1OM3VCH,thank you!
+1,0.6,1,15,39JEC7537VX5G39RFM4QWBE1OM3VCH,good idea
+1,0.7,1,1,3EWIJTFFVP34K0SP8GMW16OEF240EO,My word.  Can you break away at some point and meet up with us?
+1,0.7,0,2,3EWIJTFFVP34K0SP8GMW16OEF240EO,"I know, I'm sorry.  I won't forget again...I promise!"
+1,0.7,1,3,3EWIJTFFVP34K0SP8GMW16OEF240EO,"Yea, I know all about asshole bosses.  I think I set the record!"
+1,0.7,1,4,3EWIJTFFVP34K0SP8GMW16OEF240EO,It wasn't me...I swear.  What's your plan of attack?  Or maybe I should say defense?!  ;]
+1,0.7,1,5,3EWIJTFFVP34K0SP8GMW16OEF240EO,What a jerk.  I always thought he was bad news.  Any ideas?
+1,0.7,1,6,3EWIJTFFVP34K0SP8GMW16OEF240EO,"Well, it's a hard habit to break so don't be too hard on yourself."
+1,0.7,1,7,3EWIJTFFVP34K0SP8GMW16OEF240EO,Dang...sorry to hear about that.  Do you want to talk about it later?
+1,0.7,0,8,3EWIJTFFVP34K0SP8GMW16OEF240EO,"Well, which is it?"
+1,0.7,0,9,3EWIJTFFVP34K0SP8GMW16OEF240EO,"Yea, no problem.  What's the deal?"
+1,0.7,1,10,3EWIJTFFVP34K0SP8GMW16OEF240EO,Oh geez!  Reminds me of the movie Groundhog Day!  It's a dooooozy ;]
+1,0.7,1,11,3EWIJTFFVP34K0SP8GMW16OEF240EO,No worries.  Just hang tight and I'll see you soon.  Extra ketchup too for my sins ;]
+1,0.7,1,12,3EWIJTFFVP34K0SP8GMW16OEF240EO,"No, I haven't been up to snuff lately.  Just in a funk, I guess.  No offense meant."
+1,0.7,0,13,3EWIJTFFVP34K0SP8GMW16OEF240EO,I know.  So what do you want to do?  Someone's going to be disappointed either way.
+1,0.7,0,14,3EWIJTFFVP34K0SP8GMW16OEF240EO,"Alright, talk to you soon."
+1,0.7,1,15,3EWIJTFFVP34K0SP8GMW16OEF240EO,"Well, that's good at least.  I hope there wasn't a lot of money in there."
+1,0.8,1,1,3VBEN272MLV25N8SNDV4BFF9NA1SGJ,I'll just come home. Sounds like you're the one that needs a drink!
+1,0.8,1,2,3VBEN272MLV25N8SNDV4BFF9NA1SGJ,I'm so sorry! I'll help with dinner tonight and do the dishes!
+1,0.8,1,3,3VBEN272MLV25N8SNDV4BFF9NA1SGJ,I'll keep an eye out if any jobs open up at my work
+1,0.8,1,4,3VBEN272MLV25N8SNDV4BFF9NA1SGJ,I didn't tell her. Maybe she's just guessing?
+1,0.8,1,5,3VBEN272MLV25N8SNDV4BFF9NA1SGJ,Break up with him first!
+1,0.8,1,6,3VBEN272MLV25N8SNDV4BFF9NA1SGJ,"lol Hey, you're the one who chose to diet. Have coffee if you want coffee!"
+1,0.8,1,7,3VBEN272MLV25N8SNDV4BFF9NA1SGJ,Oh no! I'm so sorry!
+1,0.8,0,8,3VBEN272MLV25N8SNDV4BFF9NA1SGJ,lol Are you mad?
+1,0.8,0,9,3VBEN272MLV25N8SNDV4BFF9NA1SGJ,"Well, what do you need?"
+1,0.8,1,10,3VBEN272MLV25N8SNDV4BFF9NA1SGJ,OMG that sucks!
+1,0.8,1,11,3VBEN272MLV25N8SNDV4BFF9NA1SGJ,"Sorry, I'm doing the best I can"
+1,0.8,0,12,3VBEN272MLV25N8SNDV4BFF9NA1SGJ,"I'm fine, I just don't feel like going out"
+1,0.8,0,13,3VBEN272MLV25N8SNDV4BFF9NA1SGJ,Yes it is! Someone will have to miss out
+1,0.8,0,14,3VBEN272MLV25N8SNDV4BFF9NA1SGJ,"Okay, see you then"
+1,0.8,1,15,3VBEN272MLV25N8SNDV4BFF9NA1SGJ,"Wow, that's awful! It happened to me once and it was no fun!"
+1,0.9,1,1,3IFS6Q0HJJFG1EEND1V7WRSP2NTSIB,Want to get out of there? Just us tonight?
+1,0.9,1,2,3IFS6Q0HJJFG1EEND1V7WRSP2NTSIB,I'll take it out right away.
+1,0.9,1,3,3IFS6Q0HJJFG1EEND1V7WRSP2NTSIB,just gotta tough it out look for something else in the meantime
+1,0.9,1,4,3IFS6Q0HJJFG1EEND1V7WRSP2NTSIB,no idea who told her man
+1,0.9,1,5,3IFS6Q0HJJFG1EEND1V7WRSP2NTSIB,i didnt know i swear. if you want to talk about it im here
+1,0.9,1,6,3IFS6Q0HJJFG1EEND1V7WRSP2NTSIB,It's all good
+1,0.9,1,7,3IFS6Q0HJJFG1EEND1V7WRSP2NTSIB,shit im sorry
+1,0.9,1,8,3IFS6Q0HJJFG1EEND1V7WRSP2NTSIB,I'll uber
+1,0.9,0,9,3IFS6Q0HJJFG1EEND1V7WRSP2NTSIB,yeah whats up man
+1,0.9,1,10,3IFS6Q0HJJFG1EEND1V7WRSP2NTSIB,Need me to bring you some clothes?
+1,0.9,0,11,3IFS6Q0HJJFG1EEND1V7WRSP2NTSIB,They wont bro
+1,0.9,0,12,3IFS6Q0HJJFG1EEND1V7WRSP2NTSIB,im fine just need some time alone
+1,0.9,0,13,3IFS6Q0HJJFG1EEND1V7WRSP2NTSIB,sorry man thats all they had
+1,0.9,0,14,3IFS6Q0HJJFG1EEND1V7WRSP2NTSIB,I'll give you a call then
+1,0.9,1,15,3IFS6Q0HJJFG1EEND1V7WRSP2NTSIB,make sure you file a police report
+1,0.6,1,1,3XXU1SWE8NR1UNBDSBKA5NYNUNB0AY,Do you need me to come and help with anything?
+1,0.6,0,2,3XXU1SWE8NR1UNBDSBKA5NYNUNB0AY,"I know mom, I will take care of it right now."
+1,0.6,1,3,3XXU1SWE8NR1UNBDSBKA5NYNUNB0AY,Just hang in there until you find something better.
+1,0.6,0,4,3XXU1SWE8NR1UNBDSBKA5NYNUNB0AY,I had nothing to do with her finding out.
+1,0.6,1,5,3XXU1SWE8NR1UNBDSBKA5NYNUNB0AY,You sure that he is going to break up with you?
+1,0.6,1,6,3XXU1SWE8NR1UNBDSBKA5NYNUNB0AY,I understand that habits are hard to break.
+1,0.6,1,7,3XXU1SWE8NR1UNBDSBKA5NYNUNB0AY,I am so sorry to hear that you got laid off.
+1,0.6,0,8,3XXU1SWE8NR1UNBDSBKA5NYNUNB0AY,Are you angry with me?
+1,0.6,0,9,3XXU1SWE8NR1UNBDSBKA5NYNUNB0AY,"Yes, How may I help you?"
+1,0.6,1,10,3XXU1SWE8NR1UNBDSBKA5NYNUNB0AY,Hurry up and get home and get some dry clothes on before you get sick.
+1,0.6,1,11,3XXU1SWE8NR1UNBDSBKA5NYNUNB0AY,"Chill man, I said I will be there soon."
+1,0.6,1,12,3XXU1SWE8NR1UNBDSBKA5NYNUNB0AY,I just have been going through some things lately.
+1,0.6,1,13,3XXU1SWE8NR1UNBDSBKA5NYNUNB0AY,I will have to figure something out.
+1,0.6,0,14,3XXU1SWE8NR1UNBDSBKA5NYNUNB0AY,I will call you soon
+1,0.6,1,15,3XXU1SWE8NR1UNBDSBKA5NYNUNB0AY,Sorry you had to experience that.
+1,0.7,1,1,3PJ71Z61R5YNWTMQWOAANX6DTXU91Q,Ok sorry
+1,0.7,0,2,3PJ71Z61R5YNWTMQWOAANX6DTXU91Q,But mom what can I do for that?
+1,0.7,1,3,3PJ71Z61R5YNWTMQWOAANX6DTXU91Q,Is he torturing?
+1,0.7,1,4,3PJ71Z61R5YNWTMQWOAANX6DTXU91Q,"lol, Idk who did this?"
+1,0.7,1,5,3PJ71Z61R5YNWTMQWOAANX6DTXU91Q,Just leave dave. Live for you.
+1,0.7,1,6,3PJ71Z61R5YNWTMQWOAANX6DTXU91Q,It's ok
+1,0.7,1,7,3PJ71Z61R5YNWTMQWOAANX6DTXU91Q,"yeah, I got lucky"
+1,0.7,0,8,3PJ71Z61R5YNWTMQWOAANX6DTXU91Q,"Are you not interested to chat with me, IF yes, then ok bye."
+1,0.7,0,9,3PJ71Z61R5YNWTMQWOAANX6DTXU91Q,"Yes, what do you need from me?"
+1,0.7,1,10,3PJ71Z61R5YNWTMQWOAANX6DTXU91Q,"Oh, sorry"
+1,0.7,1,11,3PJ71Z61R5YNWTMQWOAANX6DTXU91Q,lol cool down dude
+1,0.7,1,12,3PJ71Z61R5YNWTMQWOAANX6DTXU91Q,"Hey, chill out, I am okay"
+1,0.7,0,13,3PJ71Z61R5YNWTMQWOAANX6DTXU91Q,Can we cancel the show?
+1,0.7,0,14,3PJ71Z61R5YNWTMQWOAANX6DTXU91Q,Ok
+1,0.7,1,15,3PJ71Z61R5YNWTMQWOAANX6DTXU91Q,Last time where do you see your wallet?
+1,0.8,1,1,3ITXP059PXFCWPYTVJG78S7PF2ISJN,oh no LOL
+1,0.8,1,2,3ITXP059PXFCWPYTVJG78S7PF2ISJN,Sorry mom
+1,0.8,1,3,3ITXP059PXFCWPYTVJG78S7PF2ISJN,Bosses... What'd he do?
+1,0.8,1,4,3ITXP059PXFCWPYTVJG78S7PF2ISJN,Oh no.  That's not good at all
+1,0.8,1,5,3ITXP059PXFCWPYTVJG78S7PF2ISJN,That's horrible.  I'm so sorry.
+1,0.8,1,6,3ITXP059PXFCWPYTVJG78S7PF2ISJN,lol!  I don't blame you
+1,0.8,1,7,3ITXP059PXFCWPYTVJG78S7PF2ISJN,Oh wow.  I didn't know I'm so sorry
+1,0.8,0,8,3ITXP059PXFCWPYTVJG78S7PF2ISJN,what do you mean k??? Should I take uber or the bus?
+1,0.8,0,9,3ITXP059PXFCWPYTVJG78S7PF2ISJN,"Sorry I'm here, what do you need??"
+1,0.8,1,10,3ITXP059PXFCWPYTVJG78S7PF2ISJN,omg!!
+1,0.8,1,11,3ITXP059PXFCWPYTVJG78S7PF2ISJN,I'm on it lol
+1,0.8,0,12,3ITXP059PXFCWPYTVJG78S7PF2ISJN,Can you come over?
+1,0.8,0,13,3ITXP059PXFCWPYTVJG78S7PF2ISJN,"I know, that's why I'm telling you"
+1,0.8,0,14,3ITXP059PXFCWPYTVJG78S7PF2ISJN,Thanks :)
+1,0.8,1,15,3ITXP059PXFCWPYTVJG78S7PF2ISJN,Good idea
+1,0.9,1,1,3SB5N7Y3O4024EOGEBCK199QSIJ0G5,"I'll help you out, lol"
+1,0.9,1,2,3SB5N7Y3O4024EOGEBCK199QSIJ0G5,Sorry Mom. I'll do better next time!
+1,0.9,1,3,3SB5N7Y3O4024EOGEBCK199QSIJ0G5,You want me to take a crack at him? This guy sounds like a real dick.
+1,0.9,1,4,3SB5N7Y3O4024EOGEBCK199QSIJ0G5,"Damn, I'm sorry man. Let me hit up the crew to find the snake."
+1,0.9,1,5,3SB5N7Y3O4024EOGEBCK199QSIJ0G5,"You should go on a date with me, lol. You know to really stick it to him. Show him you've moved on. If he was gonna break up with you I'm sure he wouldn't mind, lol."
+1,0.9,1,6,3SB5N7Y3O4024EOGEBCK199QSIJ0G5,"Woah, Jess, sorry. Didn't mean to judge."
+1,0.9,1,7,3SB5N7Y3O4024EOGEBCK199QSIJ0G5,I'm so sorry. Let's go out and drink the pain away.
+1,0.9,1,8,3SB5N7Y3O4024EOGEBCK199QSIJ0G5,"You know, what? I'll spring for the uber."
+1,0.9,0,9,3SB5N7Y3O4024EOGEBCK199QSIJ0G5,... no...
+1,0.9,1,10,3SB5N7Y3O4024EOGEBCK199QSIJ0G5,"Yeah, an umbrella would not have helped with that mess."
+1,0.9,0,11,3SB5N7Y3O4024EOGEBCK199QSIJ0G5,Over my dead body !
+1,0.9,0,12,3SB5N7Y3O4024EOGEBCK199QSIJ0G5,"I'm great, it's just that I'm beat from work. Sorry it's happened twice in a row Ruby."
+1,0.9,0,13,3SB5N7Y3O4024EOGEBCK199QSIJ0G5,What's your offer?
+1,0.9,0,14,3SB5N7Y3O4024EOGEBCK199QSIJ0G5,Awesome.  Looking forward to it :)
+1,0.9,1,15,3SB5N7Y3O4024EOGEBCK199QSIJ0G5,Yikes! Hope you find it soon.
